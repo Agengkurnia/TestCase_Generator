@@ -1,0 +1,59 @@
+LOG ISSUE / DEFECT SYSTEM INTEGRATION TESTING (SIT),,,,,,,,,,,,,
+,,,,,,,,,,,,,
+No.,Issue ID,Ref ID ,Modul / Area,Field Skenario,Deskripsi Skenario,Deskripsi Issue / Bug,Langkah Reproduksi,Gambar,Priority / Severity,Status Issue,Assignee / Dev,Tanggal Ditemukan,Tanggal Selesai
+1,SIT-001,SKN-020,Master Product,Searching Product Code (SKU),Filtering Code maupun Name SKU sesuai dengan value yang diInputkan,Belum berhasil get value after action filtering pada LOV Product Code by Code maupun Name SKU,"1. Popup daftar produk muncul dengan kolom:
+   - CODE (kode SKU)
+   - NAME (nama produk)
+   - ACTION (tombol Select)
+2. Inputkan sebagian atau seluruh nilai pada kolom Search SKU code or name.",Gambar 3,Medium,Open,Farrel (Maven),"September 3, 2026",
+2,SIT-002,SKN-013,Master Product,Product Category ,"Get value data from Master Data API.
+mKategoriProduk | intKategoriID
+
+Mandatory Fill",Belum berhasil get value after action filtering pada LOV Product Code by Code maupun Name SKU,"1. Buka halaman Master?Product dan klik tombol Tambah?Produk.
+2. Pada form input, arahkan ke field Product?Category.
+3. Coba simpan data tanpa memilih nilai pada field Product?Category.",Gambar 4,Medium,In Progress,Farrel (Maven),"September 3, 2026",
+3,SIT-003,SKN-027,Master Product,File Upload - Format,upload File photo dengan format selain JPG dan PNG,"Berhasil Saved dengan format file selain JPG, PNG","1. Buka halaman Master?Product dan klik tombol Tambah?Produk.
+2. Pada form input, arahkan ke bagian Upload?File?Photo.
+3. Pilih file gambar dengan format selain?JPG?atau?PNG (misalnya?BMP,?GIF,?TIFF,?PDF).
+4. Klik tombol Upload atau Simpan.",Gambar 5,High,Resolved,Farrel (Maven),"September 3, 2026",
+4,SIT-004,SKN-037,Master Product,Inserted dan Updated by,Inserted by dan Updated by pada detail table Product DB ,"Sistem belum mencatat dengan benar informasi pengguna pada kolom Inserted?By dan Updated?By di tabel mGtProduct
+
+existing masih menampilkan by GuId ","1. Buka halaman Master?Product dan klik tombol Tambah?Produk.
+2. Isi semua field wajib (Product?Code, Product?Name, Category, Status, dll.), lalu klik Simpan.
+3. Buka database mGtProduk dan periksa kolom 'Inserted?By' — pastikan nilainya sesuai dengan user yang login.
+4. Lakukan perubahan pada data produk yang sama (misalnya ubah nama atau kategori).
+5. Simpan perubahan, lalu periksa kolom 'Updated?By' di tabel database — pastikan nilainya berubah sesuai user yang melakukan update.",Gambar 6,High,Open,Riyan (BE),"September 3, 2026",
+5,SIT-005,,,,,,,Gambar 7,,Resolved,Farrel (Maven),"September 4, 2026",
+6,SIT-006,SKN-046,Master Reason,Type ,action View after create Type Reason,value Type reason menjadi null padahal di DB ada datanya,"1. Buka halaman Master?Reason dan klik tombol Tambah?Reason.
+2. Isi field Reason?Name (contoh: PRODUK?RUSAK) dan Description (contoh: Produk mengalami kerusakan saat pengiriman).
+3. Pastikan status Active dalam posisi aktif, lalu klik tombol Simpan.
+4. Setelah data tersimpan, sistem otomatis menampilkan halaman View?Reason atau detail Reason yang baru dibuat.",Gambar 8,High,In Progress,Farrel (Maven),"September 4, 2026",
+7,SIT-007,SKN-047,Master Reason,Type ,Add Type Reason 'Visit' dan 'Others',muncul pesan error “tidak?enable?input?data?dengan?Tipe?Reason?‘Visit’/‘Others’”.,"1. Buka menu Master???Reason.
+2. Klik tombol Tambah?Reason.
+3. Isi field:
+   - Reason?Name: AKSES?DITOLAK
+   - Description: Pelanggan tidak dapat mengakses sistem.
+   - Type?Reason: Visit atau Others.
+   - Status: Active.
+4. Klik tombol Save?Reason",Gambar 9,High,Resolved,Riyan (BE),"September 4, 2026",
+8,SIT-008,SKN-048,Master Reason,Type , Perbedaan warna UI pada setiap Type?Reason,bedakan warna tiap Type Reason agar tidak rancu,"1. Buka menu Master???Reason.
+2. Klik tombol Tambah?Reason dan buat Reason baru dengan tipe tertentu (misalnya Visit).
+3. Simpan Reason, lalu amati tampilan di tabel Reason.
+4. Ulangi langkah dengan tipe lain (Order, Return, Others).",Gambar 10,Low,Resolved,Farrel (Maven),"September 4, 2026",
+9,SIT-009,SKN-049,Master Reason,Inserted dan Updated by,Inserted by dan Updated by pada detail table Reason DB ,Sistem belum mencatat dengan benar informasi pengguna pada kolom Inserted?By dan Updated?By di tabel mGtReason,"1. Buka halaman Master?Product dan klik tombol Tambah?Produk.
+2. Isi semua field wajib (Product?Name, Product?Type.), lalu klik Simpan.
+3. Buka database mGtReason dan periksa kolom 'Inserted?By' — pastikan nilainya sesuai dengan User login.
+4. Lakukan perubahan pada data produk yang sama (misalnya ubah nama atau kategori).
+5. Simpan perubahan, lalu periksa kolom 'Updated?By' di tabel database — pastikan nilainya berubah sesuai user yang melakukan update.",Gambar 11,High,Open,Riyan (BE),"September 4, 2026",
+10,SIT-010,SKN-050,Master Reason,Filtering by Kolom Dashboard,Validasi fungsi filter pada kolom 'Type'  Dashboard?Reason,Fungsi filter pada kolom Type di Dashboard?Reason belum berjalan sesuai harapan,"1. Buka halaman Dashboard?Reason.
+2. Klik kolom Status dan pilih filter misal Visit.
+3. Amati hasil tampilan tabel — pastikan hanya Reason dengan tipe Visit yang muncul.
+4. Ulangi langkah dengan filter Order, Return, Others, dan Complaint.",Gambar 12,Medium,In Progress,Farrel (Maven),"September 4, 2026",
+11,SIT-011,SKN-051,Master Reason,Filtering by Kolom Dashboard,Validasi fungsi filter pada kolom 'Status'  Dashboard?Reason,Fungsi filter pada kolom Status di Dashboard?Reason belum berjalan sesuai harapan,"1. Buka halaman Dashboard?Reason.
+2. Pada kolom Status, ketik atau pilih filter Active.
+3. Amati hasil tampilan tabel — pastikan hanya Reason dengan status Active yang muncul.
+4. Ulangi langkah dengan filter Inactive -- Pastikan hanya Reason dengan status Inactive yang muncul.",Gambar 13,Medium,In Progress,Farrel (Maven),"September 4, 2026",
+12,SIT-012,SKN-052,Master Reason,Type,Value pada Type?Reason antara tampilan UI?Maven dan data di Backend?(Falcon?FPRS).,Value Visit di UI Maven tidak sesuai dengan value Visit di backend Falcon?FPRS.,"1. Buka halaman Dashboard?Reason di Maven.
+2. Amati kolom Type pada daftar Reason — pastikan label yang tampil adalah Visit/Kunjungan.
+3. Buka database (pada tabel mGtReason).",Gambar 14,High,Open,Farrel (Maven),"September 4, 2026",
+13,SIT-013,,,,,,,,,,,,
