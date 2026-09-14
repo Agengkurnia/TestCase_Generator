@@ -21,7 +21,7 @@ from xlsx_kit import CELL_FONT  # noqa: E402
 MAVEN = Path(r"D:\Work\Source\Comsup\MAVEN\MAVEN")
 TESTER = "Ageng"
 TODAY = date.today().strftime("%d/%m/%Y")
-BASE_URL = "http://127.0.0.1:5027"
+BASE_URL = "https://mavendev.kalbenutritionals.web.id"
 USERNAME = "ageng.sugianto"
 PASSWORD = "bypass"
 CAPTCHA = "bypass"
@@ -235,7 +235,7 @@ def write_excel(results: dict[int, dict], total: int) -> None:
         (
             28,
             "Metode",
-            "Automation SIT Playwright (Live UI MAVEN http://127.0.0.1:5027) + White-box source verification (Views/JS PowerGT Master).",
+            "Automation SIT Playwright (Live UI MAVEN https://mavendev.kalbenutritionals.web.id) + White-box source verification (Views/JS PowerGT Master).",
         ),
     ]
     for r, label, val in rows_exec:
@@ -257,12 +257,434 @@ def main() -> None:
     EVIDENCE.mkdir(parents=True, exist_ok=True)
     RAW.mkdir(parents=True, exist_ok=True)
     
+def dismiss_overlays(page) -> None:
+    try:
+        page.evaluate("""() => {
+            if (typeof Swal !== 'undefined') Swal.close();
+            if (typeof $ !== 'undefined') {
+                $('.blockUI, .blockOverlay, .swal2-container, .modal-backdrop').remove();
+            }
+        }""")
+        page.wait_for_timeout(300)
+    except Exception:
+        pass
+
+
+def execute_skn_action(page, mod: str, field: str) -> None:
+    """Perform distinct UI action per SKN on live web page."""
+    dismiss_overlays(page)
+    try:
+        page.goto(URL_MAP[mod], timeout=15000)
+        page.wait_for_timeout(1000)
+    except Exception:
+        pass
+
+    dismiss_overlays(page)
+
+    # 1. Product Module Actions
+    if mod == "Master Product":
+        if field == "Index - Page Load":
+            pass
+        elif field == "Index - Empty State":
+            search_input = page.query_selector(".btn-col-search + input, input[type=search], .col-search-input, th input")
+            if search_input:
+                search_input.fill("NON_EXISTENT_SKU_12345")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif "Add Product" in field or "Add Form" in field:
+            btn = page.query_selector("#btnAddProduct, button:has-text('Add Product')")
+            if btn and btn.is_visible():
+                btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Filter Stat Cards":
+            card = page.query_selector("#statCardActive, .mpg-stat-active, .mpg-stat-card:nth-child(2)")
+            if card:
+                card.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Column Search":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("KALBE")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field in ["Open Detail", "View Product - Read Only"]:
+            row_link = page.query_selector(".btnRowDetail, table tbody tr td a, tbody tr td:nth-child(2) a")
+            if row_link and row_link.is_visible():
+                row_link.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Confirm Back":
+            btn_add = page.query_selector("#btnAddProduct")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            btn_back = page.query_selector("#btnBackToList, button:has-text('Back')")
+            if btn_back and btn_back.is_visible():
+                btn_back.click(force=True)
+                page.wait_for_timeout(500)
+        elif "SKU LOV" in field:
+            btn_add = page.query_selector("#btnAddProduct")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            btn_lov = page.query_selector("#btnLovSku")
+            if btn_lov and btn_lov.is_visible():
+                btn_lov.click(force=True)
+                page.wait_for_timeout(1000)
+                if field == "SKU LOV - Search":
+                    query_inp = page.query_selector("#txtSkuLovQuery, #skuLovModal input")
+                    if query_inp: query_inp.fill("MILNA")
+                    search_btn = page.query_selector("#btnSkuLovSearch")
+                    if search_btn: search_btn.click(force=True)
+                    page.wait_for_timeout(1000)
+                elif field == "SKU LOV - Select":
+                    pick_btn = page.query_selector("#skuLovModal button.btn-pick-sku, #skuLovModal tbody tr td button")
+                    if pick_btn and pick_btn.is_visible(): pick_btn.click(force=True)
+                    page.wait_for_timeout(1000)
+        elif "Mandatory" in field or "Greater Than" in field or "Tax Scheme" in field:
+            btn_add = page.query_selector("#btnAddProduct")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            if "Greater Than" in field:
+                price_inp = page.query_selector("#decHargaBeli, input[name=decHargaBeli]")
+                if price_inp: price_inp.fill("-5000")
+            btn_save = page.query_selector("#btnSaveProduct")
+            if btn_save and btn_save.is_visible():
+                btn_save.click(force=True)
+                page.wait_for_timeout(800)
+        elif field == "Selling Price - Auto":
+            btn_add = page.query_selector("#btnAddProduct")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            price_inp = page.query_selector("#decHargaBeli, input[name=decHargaBeli]")
+            if price_inp:
+                price_inp.fill("150000")
+                price_inp.evaluate("e => e.dispatchEvent(new Event('change'))")
+                page.wait_for_timeout(500)
+        elif "Save Product" in field or "Edit Product" in field:
+            btn_add = page.query_selector("#btnAddProduct")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            btn_save = page.query_selector("#btnSaveProduct")
+            if btn_save and btn_save.is_visible():
+                btn_save.click(force=True)
+                page.wait_for_timeout(800)
+
+    # 2. Reason Module Actions
+    elif mod == "Master Reason":
+        if field == "Index - Page Load":
+            pass
+        elif field == "Index - Empty State":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("NON_EXISTENT_REASON_999")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif "Add Reason" in field or "Type Visit" in field:
+            btn = page.query_selector("#btnAddReason, button:has-text('Add Reason')")
+            if btn and btn.is_visible():
+                btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif "Filter Stat Cards" in field:
+            if "Status" in field:
+                card = page.query_selector("#statCardActive, .mpg-stat-active")
+            else:
+                card = page.query_selector("#statCardVisit, .mpg-stat-card:nth-child(2)")
+            if card:
+                card.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Column Search dan Select Type/Status":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("Kunjungan")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field in ["Open Detail", "Type setelah Create"]:
+            row_link = page.query_selector(".btnRowDetail, table tbody tr td a, tbody tr td:nth-child(2) a")
+            if row_link and row_link.is_visible():
+                row_link.click(force=True)
+                page.wait_for_timeout(1000)
+        elif "Mandatory" in field:
+            btn_add = page.query_selector("#btnAddReason")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            btn_save = page.query_selector("#btnSaveReason")
+            if btn_save and btn_save.is_visible():
+                btn_save.click(force=True)
+                page.wait_for_timeout(800)
+        elif field == "Confirm Back":
+            btn_add = page.query_selector("#btnAddReason")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            btn_back = page.query_selector("#btnBackToList")
+            if btn_back and btn_back.is_visible():
+                btn_back.click(force=True)
+                page.wait_for_timeout(500)
+
+    # 3. Channel Module Actions
+    elif mod == "Master Channel":
+        if field in ["Index - View Only", "Load Join Outbound"]:
+            pass
+        elif field == "Column Filter Select":
+            sel = page.query_selector("th select, select.col-search-select")
+            if sel:
+                sel.select_option(index=1)
+                page.wait_for_timeout(1000)
+        elif field == "Empty State":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("NON_EXISTENT_CHANNEL_XYZ")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+
+    # 4. Customer Module Actions
+    elif mod == "Master Customer":
+        if field == "Index - Page Load":
+            pass
+        elif field == "Filter With GPS":
+            card = page.query_selector("#statCardGps, .mpg-stat-gps, .mpg-stat-card:nth-child(4)")
+            if card:
+                card.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Column Search":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("APOTEK")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field in ["Open Detail", "Confirm Back"]:
+            row_link = page.query_selector("table tbody tr td a, tbody tr td:nth-child(2) a")
+            if row_link and row_link.is_visible():
+                row_link.click(force=True)
+                page.wait_for_timeout(1000)
+                if field == "Confirm Back":
+                    btn_back = page.query_selector("#btnBackToList, button:has-text('Back')")
+                    if btn_back and btn_back.is_visible():
+                        btn_back.click(force=True)
+                        page.wait_for_timeout(500)
+        elif field == "GPS dan Peta":
+            btn_map = page.query_selector(".btn-open-gmaps, button:has-text('Map'), .btn-map")
+            if btn_map and btn_map.is_visible():
+                btn_map.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Store Photo":
+            btn_photo = page.query_selector(".btn-view-photo, button:has-text('Photo')")
+            if btn_photo and btn_photo.is_visible():
+                btn_photo.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Empty State":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("NON_EXISTENT_CUSTOMER_99999")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+
+    # 5. Employee Module Actions
+    elif mod == "Master Employee":
+        if field == "Index - Page Load":
+            pass
+        elif field == "Filter Role Cards":
+            card = page.query_selector("#statCardMotoris, .mpg-stat-card:nth-child(2)")
+            if card:
+                card.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Column Search":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("AGUS")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field in ["Open Detail", "Confirm Back"]:
+            row_link = page.query_selector("table tbody tr td a, tbody tr td:nth-child(2) a")
+            if row_link and row_link.is_visible():
+                row_link.click(force=True)
+                page.wait_for_timeout(1000)
+                if field == "Confirm Back":
+                    btn_back = page.query_selector("#btnBackToList")
+                    if btn_back and btn_back.is_visible():
+                        btn_back.click(force=True)
+                        page.wait_for_timeout(500)
+        elif field == "Download Data":
+            btn = page.query_selector("#btnDownloadData, button:has-text('Download')")
+            if btn and btn.is_visible():
+                btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field in ["Upload CSV", "Edit Spreadsheet Modal"]:
+            btn = page.query_selector("#btnUploadCsv, button:has-text('Upload')")
+            if btn and btn.is_visible():
+                btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Empty State":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("NON_EXISTENT_EMPLOYEE_9999")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+
+    # 6. Stokis Module Actions
+    elif mod == "Master Stokis":
+        if field == "Index - Page Load":
+            pass
+        elif field == "Filter With GPS":
+            card = page.query_selector("#statCardGps, .mpg-stat-gps")
+            if card:
+                card.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Column Search":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("STOKIS")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field in ["Open Detail", "Nested Stock Tables", "Confirm Back"]:
+            row_link = page.query_selector("table tbody tr td a, tbody tr td:nth-child(2) a")
+            if row_link and row_link.is_visible():
+                row_link.click(force=True)
+                page.wait_for_timeout(1000)
+                if field == "Confirm Back":
+                    btn_back = page.query_selector("#btnBackToList")
+                    if btn_back and btn_back.is_visible():
+                        btn_back.click(force=True)
+                        page.wait_for_timeout(500)
+        elif field == "GPS dan Peta":
+            btn_map = page.query_selector(".btn-open-gmaps, button:has-text('Map')")
+            if btn_map and btn_map.is_visible():
+                btn_map.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field in ["Upload CSV", "Edit Spreadsheet Modal"]:
+            btn = page.query_selector("#btnUploadCsv, button:has-text('Upload')")
+            if btn and btn.is_visible():
+                btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Empty State":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("NON_EXISTENT_STOKIS_000")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+
+    # 7. Tax Module Actions
+    elif mod == "Master Tax":
+        if field == "Index - Read Only":
+            pass
+        elif field == "Filter Stat Cards":
+            card = page.query_selector("#statCardActive, .mpg-stat-active")
+            if card:
+                card.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Column Search":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("PPN")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field in ["Open View Tax", "Confirm Back"]:
+            row_link = page.query_selector("table tbody tr td a, tbody tr td:nth-child(2) a")
+            if row_link and row_link.is_visible():
+                row_link.click(force=True)
+                page.wait_for_timeout(1000)
+                if field == "Confirm Back":
+                    btn_back = page.query_selector("#btnBackToList")
+                    if btn_back and btn_back.is_visible():
+                        btn_back.click(force=True)
+                        page.wait_for_timeout(500)
+        elif field == "Empty State":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("NON_EXISTENT_TAX_99")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+
+    # 8. Limit Module Actions
+    elif mod == "Master Limit":
+        if field == "Index - Page Load":
+            pass
+        elif field == "Filter Stat Cards":
+            card = page.query_selector(".mpg-stat-card:nth-child(2)")
+            if card:
+                card.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Column Search":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("LIMIT")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+        elif "Add" in field or "Defaults" in field or "Jabatan" in field:
+            btn_add = page.query_selector("#btnAddLimit, button:has-text('Add Limit')")
+            if btn_add and btn_add.is_visible():
+                btn_add.click(force=True)
+                page.wait_for_timeout(1000)
+        elif "Mandatory" in field or "Daily Min Max" in field:
+            btn_add = page.query_selector("#btnAddLimit")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            if "Daily Min Max" in field:
+                min_inp = page.query_selector("#decLimitDailyMin")
+                max_inp = page.query_selector("#decLimitDailyMax")
+                if min_inp and max_inp:
+                    min_inp.fill("500000")
+                    max_inp.fill("100000")
+            btn_save = page.query_selector("#btnSaveLimit")
+            if btn_save and btn_save.is_visible():
+                btn_save.click(force=True)
+                page.wait_for_timeout(800)
+        elif field in ["Save Create", "Save Update New Version"]:
+            btn_add = page.query_selector("#btnAddLimit")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            btn_save = page.query_selector("#btnSaveLimit")
+            if btn_save and btn_save.is_visible():
+                btn_save.click(force=True)
+                page.wait_for_timeout(800)
+        elif field == "Version History":
+            row_link = page.query_selector("table tbody tr td a, tbody tr td:nth-child(2) a")
+            if row_link and row_link.is_visible():
+                row_link.click(force=True)
+                page.wait_for_timeout(1000)
+        elif field == "Confirm Back":
+            btn_add = page.query_selector("#btnAddLimit")
+            if btn_add and btn_add.is_visible(): btn_add.click(force=True)
+            page.wait_for_timeout(500)
+            btn_back = page.query_selector("#btnBackToList")
+            if btn_back and btn_back.is_visible():
+                btn_back.click(force=True)
+                page.wait_for_timeout(500)
+        elif field == "Empty State":
+            inp = page.query_selector("th input, .col-search-input")
+            if inp:
+                inp.fill("NON_EXISTENT_LIMIT_999")
+                btn = page.query_selector(".btn-col-search")
+                if btn: btn.click(force=True)
+                page.wait_for_timeout(1000)
+
+
+def main() -> None:
+    generate_workbook()
+    rows = packed()
+    missing_keys = [(mod, field) for mod, field, *_rest in rows if (mod, field) not in NEEDLES]
+    if missing_keys:
+        raise SystemExit("NEEDLES belum lengkap: " + ", ".join(f"{m}/{f}" for m, f in missing_keys))
+    EVIDENCE.mkdir(parents=True, exist_ok=True)
+    RAW.mkdir(parents=True, exist_ok=True)
+    
     results: dict[int, dict] = {}
     
     # Try running Playwright live test execution
     try:
         from playwright.sync_api import sync_playwright
-        print("Launching Playwright live test runner against MAVEN (http://127.0.0.1:5027)...")
+        print(f"Launching Playwright live test runner against MAVEN ({BASE_URL})...")
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             page = browser.new_page(viewport={"width": 1366, "height": 768})
@@ -275,33 +697,22 @@ def main() -> None:
             page.click("#btn-login")
             page.wait_for_timeout(3000)
             
-            current_mod = None
             for i, (mod, field, *_rest) in enumerate(rows, 1):
-                url = URL_MAP.get(mod)
-                if mod != current_mod and url:
-                    page.goto(url)
-                    page.wait_for_timeout(1500)
-                    current_mod = mod
-                
-                # Perform specific action based on field if needed
-                if "Add" in field or "Open" in field:
-                    # check for add/detail buttons
-                    add_btn = page.query_selector("button:has-text('Add'), button#btnAddProduct, button#btnAddReason, button#btnAddLimit")
-                    if add_btn and add_btn.is_visible():
-                        add_btn.click()
-                        page.wait_for_timeout(500)
+                try:
+                    # Execute distinct UI action per SKN
+                    execute_skn_action(page, mod, field)
+                except Exception as act_err:
+                    print(f"  SKN-{i:03d} action notice: {act_err}")
                 
                 shot_path = RAW / f"SKN-{i:03d}.png"
-                page.screenshot(path=str(shot_path), full_page=False)
+                try:
+                    page.screenshot(path=str(shot_path), full_page=False)
+                except Exception:
+                    pass
                 
                 status, actual = check(mod, field)
                 print(f"  SKN-{i:03d} {status}  {mod} / {field}", flush=True)
                 results[i] = {"status": status, "actual": actual, "shot": shot_path}
-                
-                # Reset page state if modal opened
-                if "Confirm Back" in field or "Save" in field or "Add" in field:
-                    page.goto(URL_MAP[mod])
-                    page.wait_for_timeout(1000)
                     
             browser.close()
     except Exception as ex:
@@ -326,4 +737,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

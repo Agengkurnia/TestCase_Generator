@@ -40,7 +40,7 @@ from xlsx_kit import (  # noqa: E402
     write_rows,
 )
 
-OUT = HERE / "ManPowerGT_Master_TestCase.xlsx"
+OUT = HERE / "ManPowerGT_Master_Maven_Testcase.xlsx"
 
 MODULES = [
     (MOD_PRODUCT, PRODUCT_CASES),

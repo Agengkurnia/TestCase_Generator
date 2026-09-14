@@ -28,6 +28,7 @@ SKN_HEADERS = [
     "Priority",
     "Status Uji",
     "Hasil Aktual",
+    "Bukti Pengujian",
     "QA",
     "Tanggal Uji",
 ]
