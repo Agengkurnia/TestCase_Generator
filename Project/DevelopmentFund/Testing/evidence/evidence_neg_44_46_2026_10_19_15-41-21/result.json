@@ -1,0 +1,24 @@
+{
+  "stamp": "19/10/2026 15:41:52",
+  "results": [
+    {
+      "id": "SV-MK-01",
+      "status": "Pass",
+      "hasil": "waited=1.0s validation=True first='×Submit this data?' final='×\\nProgram Description tidak boleh kosong !'",
+      "evidence": "T1_SV_MK_01_no_act.png"
+    },
+    {
+      "id": "SV-MK-02",
+      "status": "Pass",
+      "hasil": "waited=1.0s validation=True first='×Submit this data?' final='×\\nProgram Description tidak boleh kosong !'",
+      "evidence": "T1_SV_MK_02_no_desc.png"
+    },
+    {
+      "id": "SV-AP-02",
+      "status": "Fail",
+      "hasil": "waited=1.0s validation=False first='×Save this data?' final='×\\nSave this data?'",
+      "evidence": "T1_SV_AP_02_no_tick.png"
+    }
+  ],
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_neg_44_46_2026_10_19_15-41-21"
+}

@@ -190,6 +190,7 @@ def run_priority(page):
         "Print Report berhasil membuka file PDF rating." if pdf_ok else "Print Report gagal. Laporan PDF rating tidak keluar (komponen pembuat PDF belum terpasang).",
         page)
     logout(page)
+    login(page, ADMIN)
 
     go(page, f"{BASE}/priority")
     page.wait_for_load_state("domcontentloaded")
@@ -465,10 +466,11 @@ def run_inspection(page):
         logout(page)
         login(page, ADMIN)
         go(page, f"{BASE}/engineer-inspection/{slug}/{insp_id}")
-        if page.locator("button:has-text('Revise')").count():
-            page.locator("button:has-text('Revise')").click()
+        revise = page.get_by_role("button", name="Revise", exact=True)
+        if revise.count():
+            revise.first.click()
             page.wait_for_timeout(200)
-            page.locator("button:has-text('Send revise'), button:has-text('Revise')").last.click()
+            page.get_by_role("button", name="Send revise", exact=True).click()
             page.wait_for_timeout(400)
         rec(85, "Pass" if "submitted" in body(page).lower() or page.locator("input[name=revise_note], textarea[name=revise_note]").count() else "Fail",
             "Revise tanpa catatan ditahan validasi. Status tetap Submitted." if True else "Revise tanpa catatan tetap diproses.",
@@ -717,10 +719,15 @@ def run_mitigation(page):
         page)
 
     go(page, f"{BASE}/mitigation/sit-nocoord")
+    if page.locator("button:has-text('Delete Proposal')").count():
+        page.once("dialog", lambda d: d.accept())
+        page.locator("button:has-text('Delete Proposal')").click()
+        page.wait_for_load_state("domcontentloaded")
+    go(page, f"{BASE}/mitigation/sit-nocoord")
     rec(114, "Pass" if has(page, "Calculate New Mitigation Plan") or has(page, "Stabilization Calculator") else "Fail",
         "Form estimasi tampil lengkap saat belum ada plan aktif." if has(page, "Calculate New Mitigation Plan") or page.locator("textarea[name=slope_condition]").count() else "Form create mitigasi tidak tampil.",
         page)
-    if page.locator("textarea[name=slope_condition]").count():
+    if page.locator("textarea[name=slope_condition]:visible").count():
         page.locator("button:has-text('Save Estimation Plan')").click()
         page.wait_for_timeout(400)
         rec(115, "Pass" if page.locator("textarea[name=slope_condition]").count() else "Fail",

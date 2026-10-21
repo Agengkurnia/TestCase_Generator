@@ -1,0 +1,13 @@
+{
+  "stamp": "2026_10_17_22-46-58",
+  "pass": 7,
+  "fail": 4,
+  "total": 11,
+  "state": {
+    "mkpp_happy": "",
+    "mkpp_reject": "",
+    "claims": []
+  },
+  "excel": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\SIT_Exhaustive\\DF_SIT_Exhaustive_2026_10_17_22-46-58.xlsx",
+  "evidence": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\SIT_Exhaustive\\evidence_2026_10_17_22-46-58"
+}

@@ -1,0 +1,51 @@
+{
+  "it_ds": {
+    "role": "IT - DS",
+    "access": {},
+    "url": "https://mavendev.kalbenutritionals.web.id/Error/403",
+    "forbidden": true
+  },
+  "fn_mk_19": {
+    "doc": "26.10/MKPP-MIM/0061.000",
+    "status": "APPROVED",
+    "states": {
+      "btnFind": {
+        "state": "visible",
+        "display": "inline-block",
+        "text": "Find"
+      },
+      "btnNew": {
+        "state": "visible",
+        "display": "inline-block",
+        "text": "New"
+      },
+      "btnSave": {
+        "state": "hidden",
+        "display": "none",
+        "text": "Save"
+      },
+      "btnSubmit": {
+        "state": "hidden",
+        "display": "none",
+        "text": "Submit"
+      },
+      "btnPrintout": {
+        "state": "visible",
+        "display": "inline-block",
+        "text": "Print"
+      },
+      "btnUpdateAttachment": {
+        "state": "hidden",
+        "display": "none",
+        "text": "Update Attachment"
+      },
+      "btnHeaderViewAttachment": {
+        "state": "hidden",
+        "display": "inline-block",
+        "text": "View"
+      }
+    },
+    "note": "Update Attachment forced visible with red outline for evidence; originally display:none"
+  },
+  "fn_mk_19_evidence": "FN_MK_19_attach.png"
+}

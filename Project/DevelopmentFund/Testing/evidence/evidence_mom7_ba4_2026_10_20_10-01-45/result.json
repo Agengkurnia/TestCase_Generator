@@ -1,0 +1,102 @@
+{
+  "id": "MOM-16-FEE",
+  "status": "Fail",
+  "hasil": "BEFORE OK (hanya Sisa>0). Save saved=False alert='×\\nJumlah fee tidak proporsional terhadap klaim.' meta={'id': '0', 'doc': ''} sync={'act': 'CONSUMER OFFER (380201)', 'partner': '050311 | CATUR SENTOSA ANUGERAH, PT (BANDUNG SELATAN) (050311)', 'inv': '300', 'feeUi': '1.50', 'feeHidden': 1.5}. AFTER still_has=True sisa=300 n=1. Rule habis→hilang belum terbukti end-to-end.",
+  "before": {
+    "headers": [
+      "Pilih",
+      "Activity",
+      "Program Desc",
+      "Period From",
+      "period To",
+      "Fee",
+      "Fee Percentage",
+      "Sisa Saldo"
+    ],
+    "idxSisa": 7,
+    "info": "Showing 1 to 1 of 1 entries",
+    "n": 1,
+    "rows": [
+      {
+        "act": "CONSUMER OFFER (380201)",
+        "sisaRaw": "300",
+        "sisaNum": 300,
+        "fee": "Yes",
+        "feePct": "0.5%",
+        "text": "CONSUMER OFFER (380201) 5-step MKPP 1019-1458 10/19/2026 12:00:00 AM 12/31/2026 12:00:00 AM Yes 0.5% 300",
+        "cells": [
+          "",
+          "CONSUMER OFFER (380201)",
+          "5-step MKPP 1019-1458",
+          "10/19/2026 12:00:00 AM",
+          "12/31/2026 12:00:00 AM",
+          "Yes",
+          "0.5%",
+          "300",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "allPositive": true,
+    "anyZero": false
+  },
+  "after": {
+    "headers": [
+      "Pilih",
+      "Activity",
+      "Program Desc",
+      "Period From",
+      "period To",
+      "Fee",
+      "Fee Percentage",
+      "Sisa Saldo"
+    ],
+    "idxSisa": 7,
+    "info": "Showing 1 to 1 of 1 entries",
+    "n": 1,
+    "rows": [
+      {
+        "act": "CONSUMER OFFER (380201)",
+        "sisaRaw": "300",
+        "sisaNum": 300,
+        "fee": "Yes",
+        "feePct": "0.5%",
+        "text": "CONSUMER OFFER (380201) 5-step MKPP 1019-1458 10/19/2026 12:00:00 AM 12/31/2026 12:00:00 AM Yes 0.5% 300",
+        "cells": [
+          "",
+          "CONSUMER OFFER (380201)",
+          "5-step MKPP 1019-1458",
+          "10/19/2026 12:00:00 AM",
+          "12/31/2026 12:00:00 AM",
+          "Yes",
+          "0.5%",
+          "300",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "allPositive": true,
+    "anyZero": false
+  },
+  "consume": {
+    "alert": "×\nJumlah fee tidak proporsional terhadap klaim.",
+    "meta": {
+      "id": "0",
+      "doc": ""
+    },
+    "sync": {
+      "act": "CONSUMER OFFER (380201)",
+      "partner": "050311 | CATUR SENTOSA ANUGERAH, PT (BANDUNG SELATAN) (050311)",
+      "inv": "300",
+      "feeUi": "1.50",
+      "feeHidden": 1.5
+    },
+    "amt": 300
+  },
+  "at": "20/10/2026 10:03:27",
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom7_ba4_2026_10_20_10-01-45"
+}

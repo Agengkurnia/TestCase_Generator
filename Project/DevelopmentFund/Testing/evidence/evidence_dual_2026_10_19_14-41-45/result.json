@@ -1,0 +1,18 @@
+{
+  "stamp": "2026_10_19_14-41-45",
+  "track2": {
+    "total": 31,
+    "pass": 26,
+    "fail": 2,
+    "stub": 3
+  },
+  "track1": {
+    "total": 14,
+    "pass": 10,
+    "fail": 4,
+    "blocked": 0
+  },
+  "excel": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\reports\\DF_DualTrack_Report_2026_10_19_14-41-45.xlsx",
+  "markdown": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\reports\\LAPORAN_DUAL_TRACK_2026_10_19_14-41-45.md",
+  "evidence": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_dual_2026_10_19_14-41-45"
+}

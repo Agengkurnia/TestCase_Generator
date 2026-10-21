@@ -1,0 +1,32 @@
+{
+  "stamp": "19/10/2026 14:34:09",
+  "pass": true,
+  "claim_doc": "26.10/KLAIM-CSA/035",
+  "mkpp": "26.10/MKPP-MIM/0059.000",
+  "results": [
+    {
+      "term": "26.10/KLAIM-CSA/035",
+      "hit": true,
+      "empty": false,
+      "nBtn": 1,
+      "sample": [
+        "Detail |  | 5329 | 26.10/KLAIM-CSA/035 | CATUR SENTOSA ANUGERAH, PT (BANDUNG SELATAN) | REJECTED | No | 1,000,000.00 | 1"
+      ],
+      "info": "Showing 1 to 1 of 1 entries",
+      "label": "nomor_klaim"
+    },
+    {
+      "term": "26.10/MKPP-MIM/0059.000",
+      "hit": false,
+      "empty": true,
+      "nBtn": 0,
+      "sample": [
+        "No data available in table"
+      ],
+      "info": "Showing 0 to 0 of 0 entries",
+      "label": "mkpp"
+    }
+  ],
+  "note": "Find LOV grid menampilkan ID + Nomor Klaim (DocNo), bukan kolom MKPP. Cari by nomor klaim yang ada di territory ABM = Pass; cari by MKPP biasanya kosong.",
+  "evidence": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_find_lov_2026_10_19_14-33-50"
+}

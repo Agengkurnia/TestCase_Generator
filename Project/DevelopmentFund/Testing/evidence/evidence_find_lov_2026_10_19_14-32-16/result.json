@@ -1,0 +1,21 @@
+{
+  "stamp": "19/10/2026 14:32:35",
+  "pass_any": false,
+  "results": [
+    {
+      "label": "nomor_klaim",
+      "term": "26.10/KLAIM-CSA/036",
+      "hit": false,
+      "rows": 0,
+      "sample": ""
+    },
+    {
+      "label": "mkpp",
+      "term": "26.10/MKPP-MIM/0059.000",
+      "hit": false,
+      "rows": 0,
+      "sample": ""
+    }
+  ],
+  "evidence": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_find_lov_2026_10_19_14-32-16"
+}

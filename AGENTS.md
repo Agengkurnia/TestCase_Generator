@@ -59,12 +59,19 @@ Setiap pengujian modul wajib mengukur 6 metrik SLA kinerja utama:
 5. **Filter Application Re-render Time**: SLA < 1200 ms.
 6. **Client JS Heap Memory & CLS Stability**: Memory leak & layout shift check.
 
+
 ### 4. Konvensi Excel & Evidence
 - Kolom Excel: `No. | Scenario ID | Modul / Area | Field Skenario | Tipe | Deskripsi | Prasyarat | Langkah | Expected | Priority | Status Uji | Hasil Aktual | Bukti Pengujian | QA | Tanggal Uji`
 - Kolom **Bukti Pengujian**: Berisi hyperlink aktif `Lihat Evidence` yang langsung membuka kartu evidence `evidence/SKN-xxx.png`.
 - Status: `Pass` | `Fail` (tidak ada residual `Not Run` di laporan serah terima).
 - **QA**: Nama Manusia (contoh: `Ageng` / `Aziz`) — **bukan** "AI", "Agent", atau "Playwright".
 - **Tanggal Uji**: Format seragam **`DD/MM/YYYY`** (contoh: `14/09/2026`).
+
+### 5. Konvensi Periode Tanggal (Date Period Convention - MKPP & Klaim)
+- Setiap pembuatan data uji kontrak atau klaim yang memiliki rentang periode (seperti **MKPP DF**, **Klaim PRM/KDS**):
+  - **Start Date / Period From**: Ditetapkan mulai dari tanggal hari ini (`Today` / `DD/MM/YYYY`).
+  - **End Date / Period To**: Ditetapkan hingga akhir tahun berjalan (**`31/12/YYYY`**, contoh: `31/12/2026`).
+
 
 ---
 

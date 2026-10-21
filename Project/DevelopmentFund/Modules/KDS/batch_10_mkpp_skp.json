@@ -1,0 +1,289 @@
+{
+  "periodFrom": "10/12/2026",
+  "periodTo": "12/31/2026",
+  "budget": 1000000,
+  "documents": [
+    {
+      "n": 1,
+      "site": "050311",
+      "subdist": "BANDUNG SELATAN",
+      "skpCount": 2,
+      "skp": [
+        {
+          "no": "SKP/2026/BDO-SKP-1-1",
+          "amount": 500000
+        },
+        {
+          "no": "SKP/2026/BDO-SKP-1-2",
+          "amount": 500000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0034.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    },
+    {
+      "n": 2,
+      "site": "040310",
+      "subdist": "JAKARTA SELATAN",
+      "skpCount": 3,
+      "skp": [
+        {
+          "no": "SKP/2026/JKS-SKP-2-1",
+          "amount": 400000
+        },
+        {
+          "no": "SKP/2026/JKS-SKP-2-2",
+          "amount": 300000
+        },
+        {
+          "no": "SKP/2026/JKS-SKP-2-3",
+          "amount": 300000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0035.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    },
+    {
+      "n": 3,
+      "site": "400310",
+      "subdist": "JAKARTA BARAT",
+      "skpCount": 2,
+      "skp": [
+        {
+          "no": "SKP/2026/JKB-SKP-3-1",
+          "amount": 500000
+        },
+        {
+          "no": "SKP/2026/JKB-SKP-3-2",
+          "amount": 500000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0036.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    },
+    {
+      "n": 4,
+      "site": "400305",
+      "subdist": "SERANG",
+      "skpCount": 3,
+      "skp": [
+        {
+          "no": "SKP/2026/SRG-SKP-4-1",
+          "amount": 400000
+        },
+        {
+          "no": "SKP/2026/SRG-SKP-4-2",
+          "amount": 300000
+        },
+        {
+          "no": "SKP/2026/SRG-SKP-4-3",
+          "amount": 300000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0037.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    },
+    {
+      "n": 5,
+      "site": "400306",
+      "subdist": "TANGERANG KABUPATEN",
+      "skpCount": 2,
+      "skp": [
+        {
+          "no": "SKP/2026/TGK-SKP-5-1",
+          "amount": 500000
+        },
+        {
+          "no": "SKP/2026/TGK-SKP-5-2",
+          "amount": 500000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0038.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    },
+    {
+      "n": 6,
+      "site": "400309",
+      "subdist": "TANGERANG KOTA",
+      "skpCount": 3,
+      "skp": [
+        {
+          "no": "SKP/2026/TGN-SKP-6-1",
+          "amount": 400000
+        },
+        {
+          "no": "SKP/2026/TGN-SKP-6-2",
+          "amount": 300000
+        },
+        {
+          "no": "SKP/2026/TGN-SKP-6-3",
+          "amount": 300000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0039.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    },
+    {
+      "n": 7,
+      "site": "050311",
+      "subdist": "BANDUNG SELATAN",
+      "skpCount": 2,
+      "skp": [
+        {
+          "no": "SKP/2026/BDO-SKP-7-1",
+          "amount": 500000
+        },
+        {
+          "no": "SKP/2026/BDO-SKP-7-2",
+          "amount": 500000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0040.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    },
+    {
+      "n": 8,
+      "site": "040310",
+      "subdist": "JAKARTA SELATAN",
+      "skpCount": 3,
+      "skp": [
+        {
+          "no": "SKP/2026/JKS-SKP-8-1",
+          "amount": 400000
+        },
+        {
+          "no": "SKP/2026/JKS-SKP-8-2",
+          "amount": 300000
+        },
+        {
+          "no": "SKP/2026/JKS-SKP-8-3",
+          "amount": 300000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0041.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    },
+    {
+      "n": 9,
+      "site": "400310",
+      "subdist": "JAKARTA BARAT",
+      "skpCount": 2,
+      "skp": [
+        {
+          "no": "SKP/2026/JKB-SKP-9-1",
+          "amount": 500000
+        },
+        {
+          "no": "SKP/2026/JKB-SKP-9-2",
+          "amount": 500000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0042.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    },
+    {
+      "n": 10,
+      "site": "400305",
+      "subdist": "SERANG",
+      "skpCount": 3,
+      "skp": [
+        {
+          "no": "SKP/2026/SRG-SKP-10-1",
+          "amount": 400000
+        },
+        {
+          "no": "SKP/2026/SRG-SKP-10-2",
+          "amount": 300000
+        },
+        {
+          "no": "SKP/2026/SRG-SKP-10-3",
+          "amount": 300000
+        }
+      ],
+      "docNo": "26.10/MKPP-MIM/0043.000",
+      "status": "APPROVED",
+      "amount": 1000000,
+      "tier1": true
+    }
+  ],
+  "prmChecks": [
+    {
+      "siteCode": "050311",
+      "docNo": "26.10/MKPP-MIM/0034.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0034.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "050311",
+      "docNo": "26.10/MKPP-MIM/0040.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0040.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "040310",
+      "docNo": "26.10/MKPP-MIM/0035.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0035.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "040310",
+      "docNo": "26.10/MKPP-MIM/0041.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0041.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "400310",
+      "docNo": "26.10/MKPP-MIM/0036.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0036.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "400310",
+      "docNo": "26.10/MKPP-MIM/0042.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0042.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "400305",
+      "docNo": "26.10/MKPP-MIM/0037.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0037.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "400305",
+      "docNo": "26.10/MKPP-MIM/0043.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0043.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "400306",
+      "docNo": "26.10/MKPP-MIM/0038.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0038.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "400309",
+      "docNo": "26.10/MKPP-MIM/0039.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0039.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)"
+    }
+  ]
+}

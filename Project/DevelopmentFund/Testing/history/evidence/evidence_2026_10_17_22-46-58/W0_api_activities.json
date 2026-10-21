@@ -1,0 +1,27 @@
+{
+  "group": "CSA",
+  "acts": [
+    {
+      "mappingActivityId": "42d82bb6-18d3-4b4c-b27c-9dec0286bcfa",
+      "activityId": "3f97796b-8dcf-4ef7-b160-9d0d753fdc06",
+      "refCoaSegmentOraId": "350104",
+      "kode": "350104",
+      "nama": "ADVERTISING IN TV",
+      "kategori": "DROPDOWN_SEGMENT3",
+      "bolFee": false,
+      "bitFee": false,
+      "feePercentage": 0.0
+    },
+    {
+      "mappingActivityId": "9fdf4f2c-f3fe-4b34-98d5-8c7120fd1b87",
+      "activityId": "dd3f47c3-6c49-4329-b4bc-da368f75f03b",
+      "refCoaSegmentOraId": "380201",
+      "kode": "380201",
+      "nama": "CONSUMER OFFER",
+      "kategori": "DROPDOWN_SEGMENT3",
+      "bolFee": true,
+      "bitFee": true,
+      "feePercentage": 0.5
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "map_url": "https://mavendev.kalbenutritionals.web.id/DF/MappingSubdist",
+  "mon_url": "https://mavendev.kalbenutritionals.web.id/DF/MonitoringSubdist",
+  "filters": {
+    "region": true,
+    "search": true,
+    "add": true
+  },
+  "mon": {
+    "refresh": true,
+    "export": true,
+    "tabs": 7,
+    "bodyHint": "MAVEN\nSHP SYSTEM\nHome\nMaster\nDofs\nDolphine\nAudit (Ia)\nAppsheet\nNotification Api\nDevelopment Fund\nMapping Subdist\nMemo Qp\nMonitoring Subdist\nSystem Config Df\nMan Power Gt\nAKS\nTransaction / Monitoring C"
+  },
+  "copied": [
+    "T2_MAP_01_index.png->evidence_dual",
+    "T2_MAP_05_toolbar.png->evidence_dual",
+    "T2_MAP_12_grid.png->evidence_dual",
+    "T2_MON_01_index.png->evidence_dual",
+    "T2_MON_04_refresh.png->evidence_dual",
+    "T2_MON_07_export.png->evidence_dual"
+  ]
+}

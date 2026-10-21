@@ -1,0 +1,51 @@
+{
+  "lov": [
+    "",
+    "CONSUMER OFFER (380201)",
+    "E2E corrected multi-fee 1020-1009",
+    "10/20/2026 12:00:00 AM",
+    "12/31/2026 12:00:00 AM",
+    "Yes",
+    "0.5%",
+    "60,300",
+    "",
+    "",
+    ""
+  ],
+  "dump": {
+    "beforeKeys": [
+      "TXT_ACTIVITY",
+      "TXT_INVOICE_NO",
+      "DTM_INVOICE",
+      "DEC_INVOICE_AMT",
+      "DEC_FEE",
+      "DEC_FEE_AMOUNT",
+      "TXT_DTM_INVOICE",
+      "TXT_DEC_INVOICE_AMT",
+      "DEV_FEE"
+    ],
+    "beforeFee": {
+      "DEC_FEE": 0.5,
+      "DEC_FEE_AMOUNT": 250,
+      "DEV_FEE": 0.5,
+      "DEC_FEE_AMT": null
+    },
+    "afterFee": {
+      "DEC_FEE": 0.5,
+      "DEC_FEE_AMOUNT": 250,
+      "DEV_FEE": 0.5,
+      "DEC_INVOICE_AMT": 50000,
+      "TXT_ACTIVITY": "CONSUMER OFFER (380201)"
+    },
+    "expected": {
+      "pct": 0.5,
+      "amt": 250
+    },
+    "ui": {
+      "act": "CONSUMER OFFER (380201)",
+      "fee": "250.00",
+      "inv": "50,000.00"
+    },
+    "hasCalc": true
+  }
+}

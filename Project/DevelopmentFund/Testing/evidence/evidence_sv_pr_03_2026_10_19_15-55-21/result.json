@@ -1,0 +1,7 @@
+{
+  "id": "SV-PR-03",
+  "status": "Fail",
+  "hasil": "pre={'partner': '050311 | CATUR SENTOSA ANUGERAH, PT (BANDUNG SELATAN) (050311)', 'activity': 'CONSUMER OFFER (380201)', 'inv': 'INV/DF/1019-1555/F16', 'faktur': None, 'amt': '10,000.00'} faktur16=1234567890123456 first='×\\nSetelah disimpan, dokumen tidak dapat diedit lagi dan akan diteruskan ke ABM. Lanjutkan simpan?' final='×\\nTotal Klaim Activity \"CONSUMER OFFER (380201)\" (10,000) melebihi sisa saldo Rekap MKPP (300) !'",
+  "evidence": "T1_SV_PR_03_faktur16.png",
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_sv_pr_03_2026_10_19_15-55-21"
+}

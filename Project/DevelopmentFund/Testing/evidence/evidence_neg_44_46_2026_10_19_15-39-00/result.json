@@ -1,0 +1,24 @@
+{
+  "stamp": "19/10/2026 15:40:27",
+  "results": [
+    {
+      "id": "SV-MK-01",
+      "status": "Fail",
+      "hasil": "waited=0.0s found=True blocked=False generic=True body='×Submit this data?'",
+      "evidence": "T1_SV_MK_01_no_act.png"
+    },
+    {
+      "id": "SV-MK-01",
+      "status": "Fail",
+      "hasil": "Page.click: Timeout 60000ms exceeded.\nCall log:\n  - waiting for locator(\"#btnSubmit\")\n    - locator resolved to <a id=\"btnSubmit\" class=\"btn btn-success\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" class=\"bootbox modal fade bootbox-confirm in\">…</div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div tabindex=\"-1\" role=\"dialog\" class=\"bootbox modal fade bootbox-confirm in\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    114 × waiting for element to be visible, enabled and stable\n        - element is visible, enabled and stable\n        - scrolling into view if needed\n        - done scrolling\n        - <div tabindex=\"-1\" role=\"dialog\" class=\"bootbox modal fade bootbox-confirm in\">…</div> intercepts pointer events\n      - retrying click action\n        - waiting 500ms\n",
+      "evidence": "T1_MK_NEG_FAIL.png"
+    },
+    {
+      "id": "SV-AP-02",
+      "status": "Fail",
+      "hasil": "waited=0.0s found=True blocked=False generic=True body='×Save this data?'",
+      "evidence": "T1_SV_AP_02_no_tick.png"
+    }
+  ],
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_neg_44_46_2026_10_19_15-39-00"
+}

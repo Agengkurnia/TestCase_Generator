@@ -1,0 +1,12 @@
+{
+  "status": "Pass",
+  "hasil": "Detail Mapping dibuka → tab Activity OK. headers=['ACTION', 'OUTLET ID', 'OUTLET NAME', 'KODE KMMD', 'NAMA KMMD', 'LINKED AT'] nRows=4 fee=[] snippet='Child di bawah parent ini (sumber: Bosnet).\\nAdd\\nShow \\n10\\n25\\n50\\n100\\n entries\\nSearch:\\nACTION\\tOUTLET ID\\tOUTLET NAME\\tKODE KMMD\\tNAMA KMMD\\tLINKED AT\\nLepas\\t3324911\\tPT.ADYAJATI LESTARI\\t010211\\tAdyajati Lestari' | Catatan: diuji sebagai SUPER USER (akun UH CCD/RAF/Finance belum di config). Yang diverifikasi: buka detail → tab Activity berisi data mapping activity.",
+  "evidence": [
+    "01_mapping_list.png",
+    "02_after_edit_click.png",
+    "03_activity_tab.png",
+    "04_activity_detail.png",
+    "05_activity_scrolled.png"
+  ],
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom05_2026_10_19_15-26-55"
+}

@@ -1,0 +1,26 @@
+{
+  "access": {
+    "canViewMappingSubdist": true,
+    "canManageSubdist": true,
+    "canManageActivity": true
+  },
+  "detail": {
+    "tab": [
+      "Mapping Activity 1"
+    ],
+    "headers": [
+      "ACTION",
+      "KODE",
+      "NAMA ACTIVITY",
+      "KATEGORI",
+      "FEE",
+      "FEE (%)"
+    ],
+    "rows": [
+      "Edit Lepas 380202 CONSUMER OFFER FEE DROPDOWN_SEGMENT3 No 0%"
+    ],
+    "nRows": 1,
+    "addVisible": true,
+    "paneActive": true
+  }
+}

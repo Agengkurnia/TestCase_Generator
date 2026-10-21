@@ -1,0 +1,58 @@
+{
+  "id": "MOM-16-05",
+  "roles_available": [
+    {
+      "t": "SUPER USER",
+      "v": "3452"
+    },
+    {
+      "t": "IT - DS",
+      "v": "3541"
+    }
+  ],
+  "probes": [
+    {
+      "ok": true,
+      "role": "SUPER USER",
+      "access": {
+        "canViewMappingSubdist": true,
+        "canManageSubdist": true,
+        "canManageActivity": true
+      },
+      "edit": {
+        "ok": true
+      },
+      "tabs": [
+        "AKS",
+        "Mapping Child 4",
+        "Mapping Activity 1"
+      ],
+      "btnAddActivity": {
+        "exists": true,
+        "visible": true,
+        "disabled": false,
+        "className": "btn btn-primary btn-sm waves-effect waves-light"
+      },
+      "btnAddChild": {
+        "exists": true,
+        "visible": true,
+        "disabled": false,
+        "className": "btn btn-primary btn-sm waves-effect waves-light"
+      },
+      "evidence_activity": "MOM05_role_SUPER_USER_activity.png",
+      "evidence_child": "MOM05_role_SUPER_USER_child.png",
+      "url": "https://mavendev.kalbenutritionals.web.id/DF/MappingSubdist",
+      "kind": "SUPER",
+      "matches_mom": true,
+      "note": "expected full; access act=True child=True; UI AddAct=True AddChild=True"
+    }
+  ],
+  "status": "Fail",
+  "hasil": "Akun hanya punya role yang teruji: ['SUPER USER']. UH CCD / RAF / Finance TIDAK ada di ChooseRole user ini (available=['SUPER USER', 'IT - DS']). SUPER USER access={'canViewMappingSubdist': True, 'canManageSubdist': True, 'canManageActivity': True} (full akses sesuai bitSuperuser). Mekanisme canManageActivity/canManageSubdist ada di UI.",
+  "evidence": [
+    "MOM05_activity_tab.png",
+    "MOM05_role_SUPER_USER_activity.png"
+  ],
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom05_roles_2026_10_19_16-23-27",
+  "at": "19/10/2026 16:23:58"
+}

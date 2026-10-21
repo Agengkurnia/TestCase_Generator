@@ -1,0 +1,7 @@
+{
+  "id": "SV-PR-03",
+  "status": "Fail",
+  "hasil": "faktur16=1234567890123456 first='×\\nSetelah disimpan, dokumen tidak dapat diedit lagi dan akan diteruskan ke ABM. Lanjutkan simpan?' final='×\\nKolom Invoice No harus di isi!' blocked=False",
+  "evidence": "T1_SV_PR_03_faktur16.png",
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_sv_pr_03_2026_10_19_15-51-56"
+}

@@ -1,0 +1,96 @@
+{
+  "stamp": "19/10/2026 16:14:09",
+  "pass": 4,
+  "fail": 7,
+  "results": [
+    {
+      "no": 5,
+      "id": "FN-MAP-13",
+      "status": "Pass",
+      "hasil": "Fee input editable; save alert='Parent Mapping Subdist berhasil diubah.' ui={'inputs': [{'id': 'editActivityBolFee', 'name': '', 'value': 'on', 'disabled': False, 'readOnly': False, 'visible': True}, {'id': 'editActivityFeePercentage', 'name': '', 'value': '0', 'disabled': False, 'readOnly': False, 'visible': True}], 'saveBtn': [{'text': 'Simpan', 'disabled': False, 'id': 'btnSave'}, {'text': 'Simpan', 'disabled': False, 'id': 'btnSaveActivityFee'}], 'bodySnippet': 'MAVEN\\nSHP SYSTEM\\nHome\\nMaster\\nDofs\\nDolphine\\nAudit (Ia)\\nAppsheet\\nNotification Api\\nDevelopment Fund\\nMapping Subdist\\nMemo Qp\\nMonitoring Subdist\\nSystem Config Df\\nMan Power Gt\\nAKS\\nMaster / Mapping Subdist / Edit\\n\\nUbah Group / Alamat / Activity / Child\\n\\nKembali\\nSimpan\\nIDENTITAS\\nKode KMMD (Bosnet) *\\nNama KMMD *\\nTipe KMMD\\nRegion\\nOutlet ID\\nOutlet Name\\nGROUP\\nTipe *\\n— Pilih —\\nGroup\\nNon Group\\nNama Group *\\nCABA', 'url': 'https://mavendev.kalbenutritionals.web.id/DF/MappingSubdist'}",
+      "evidence": "FN_MAP_13_after_save.png",
+      "at": "19/10/2026 16:06:56"
+    },
+    {
+      "no": 15,
+      "id": "FN-MK-13",
+      "status": "Pass",
+      "hasil": "MKPP 26.10/MKPP-MIM/0061.000 status='APPROVED'. Print #btnPrintout state=visible display=inline-block. clicked=True popup=''",
+      "evidence": "FN_MK_13_print.png",
+      "at": "19/10/2026 16:15:23"
+    },
+    {
+      "no": 16,
+      "id": "FN-MK-19",
+      "status": "Fail",
+      "hasil": "doc=26.10/MKPP-MIM/0061.000. Update Attachment TIDAK visible (stub/hidden). info={'btnUpdateAttachment': {'state': 'hidden', 'text': 'Update Attachment', 'display': 'none'}, 'btnAttachment': 'missing', 'btnHeaderAttachment': 'missing', '_printCands': [{'id': 'btnPrintout', 'text': 'Print', 'visible': True, 'display': 'inline-block'}]} html={'hasBtn': True, 'commented': True, 'related': [{'id': 'btnUpdateAttachment', 'text': 'Update Attachment', 'visible': False, 'display': 'none'}, {'id': 'btnHeaderViewAttachment', 'text': 'View', 'visible': False, 'display': 'inline-block'}]}",
+      "evidence": "FN_MK_19_attach.png",
+      "at": "19/10/2026 16:12:46"
+    },
+    {
+      "no": 23,
+      "id": "FN-AP-09",
+      "status": "Fail",
+      "hasil": "Add Row manual TIDAK tersedia di ApprovalDoc (by design / commented). Baris dokumen masuk via inbox LOV saja. info={'matches': [], 'hasAddRowText': False, 'commentedAddRow': False, 'footerBtns': [], 'inboxRows': 3}",
+      "evidence": "FN_AP_09_addrow.png",
+      "at": "19/10/2026 16:12:55"
+    },
+    {
+      "no": 24,
+      "id": "FN-PR-01",
+      "status": "Pass",
+      "hasil": "before={'btnNew': 'visible', 'id': '0'} after={'id': '0', 'reason': 'Reason', 'mkpp': '', 'formReady': True}",
+      "evidence": "FN_PR_01_new.png",
+      "at": "19/10/2026 16:07:29"
+    },
+    {
+      "no": 30,
+      "id": "FN-PR-15",
+      "status": "Fail",
+      "hasil": "btnSubmit TERSSEMBUNYI. doc=26.10/KLAIM-CSA/038 id=5332 status='Status' foundDraft=True info={'btnSubmit': {'state': 'hidden', 'text': 'Submit', 'display': 'none'}, 'btnSave': {'state': 'visible', 'text': 'Save', 'display': 'inline-block'}, '_printCands': [{'id': 'btnPrintout', 'text': 'Print', 'visible': True, 'display': 'inline-block'}]}. Submit di PRM hanya muncul pada klaim Draft siap kirim; New kosong / Approved = hidden.",
+      "evidence": "FN_PR_15_submit.png",
+      "at": "19/10/2026 16:13:15"
+    },
+    {
+      "no": 32,
+      "id": "FN-PR-21",
+      "status": "Pass",
+      "hasil": "Fee balance validation probe: {'hasFeeLabel': False, 'fns': ['p_setHasDFFee', 'p_getDFFeeConfigList', 'p_isDFFeeActivity', 'p_calculateDetailFee', 'p_calculatePayloadFee', 'p_normalizeDetailFee', 'p_validateFeeBalance', 'p_btnActivitiesFee_Click', 'p_parseMemosFeesResult', 'p_LoadFeeSummary', 'p_RenderFeeSummaryMessage', 'p_RenderFeeSummary', 'p_txtDetailFeeAmount_changed'], 'els': ['txtFeeDevfundAdm', 'lblDetailFee', 'lblDetailFee', 'spnFeeSummaryLoading', 'tabFeeMkpp', 'tbodyFeeSummary']}",
+      "evidence": "FN_PR_21_fee.png",
+      "at": "19/10/2026 16:07:29"
+    },
+    {
+      "no": 55,
+      "id": "MOM-16-05",
+      "status": "Fail",
+      "hasil": "UI tab Mapping Activity OK (edit={'ok': True} tab={'ok': True, 'text': 'Mapping Activity 1'} headers=['ACTION', 'KODE', 'NAMA ACTIVITY', 'KATEGORI', 'FEE', 'FEE (%)'] rows=1 fee=[]). Limitasi role UH CCD / RAF / Finance BELUM teruji — akun role khusus tidak ada di config.",
+      "evidence": "MOM05_activity_tab.png",
+      "at": "19/10/2026 16:13:38"
+    },
+    {
+      "no": 61,
+      "id": "MOM-16-09",
+      "status": "Fail",
+      "hasil": "Grid detail klaim (MKPP 26.10/MKPP-MIM/0061.000) headers=['NO', 'PARTNER NAME', 'ACTIVITY', 'NO SKP', 'PROGRAM DESC', 'PERIOD FROM', 'TO', 'INVOICE NO', 'INVOICE DATE', 'FAKTUR PAJAK NO', 'FAKTUR PAJAK DATE', 'INVOICE AMOUNT', 'FEE AMOUNT', 'PPH TYPE', 'TARIF PPH(%)', 'PPH AMOUNT', 'FINAL AMOUNT', 'PPN TYPE', 'PPN AMOUNT', 'TOTAL AMOUNT', 'ALL BRAND', 'UMBRAND', 'ATTACHMENT', 'DELETE', 'DESCRIPTION']. has_sisa_saldo=False",
+      "evidence": "MOM09_detail_headers.png",
+      "at": "19/10/2026 16:14:03"
+    },
+    {
+      "no": 65,
+      "id": "MOM-16-FEE",
+      "status": "Fail",
+      "hasil": "UI siap multi-detail (rows 1->2) + LOV MKPP selectable=10 (Showing 1 to 10 of 78 entries). fee_ui={'hasFeeCol': True, 'hasFeeFns': True, 'feeEls': ['txtFeeDevfundAdm', 'lblDetailFee', 'lblDetailFee', 'txtDetailFeeAmount0', 'txtDetailFeeAmount1', 'spnFeeSummaryLoading', 'tabFeeMkpp', 'tbodyFeeSummary'], 'mkppHeader': '26.10/MKPP-MIM/0061.000'}. multi_ui=True. E2E Klaim Fee khusus (1-MKPP vs 2-MKPP terpisah sesuai SOP fee) BELUM dijalankan end-to-end — data/SOP fee draft.",
+      "evidence": "MOM_FEE_mkpp_lov.png",
+      "at": "19/10/2026 16:14:07"
+    },
+    {
+      "no": 67,
+      "id": "MOM-16-ATT",
+      "status": "Fail",
+      "hasil": "Attachment modal: {'text': '×\\nDocument Attachment\\nNo attachment.', 'hasMemoCCD': False, 'hasKwitansi': False, 'hasRekapan': False, 'fileInput': True, 'checklistItems': [], 'modalId': 'modalAttachmentKDSDF'}. Upload generik ada; checklist wajib fee (Memo CCD / kwitansi / rekapan PA) tidak lengkap sebagai field terpisah.",
+      "evidence": "MOM_ATT_modal.png",
+      "at": "19/10/2026 16:14:09"
+    }
+  ],
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_sel2_2026_10_19_16-11-23"
+}

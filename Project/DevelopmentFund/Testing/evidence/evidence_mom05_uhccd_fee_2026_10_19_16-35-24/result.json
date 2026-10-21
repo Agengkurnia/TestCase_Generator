@@ -1,0 +1,134 @@
+{
+  "at": "19/10/2026 16:36:30",
+  "note": "MoM: UH CCD harus bisa Edit Activity + set Fee %",
+  "results": [
+    {
+      "role": "UH CCD",
+      "access": {
+        "canViewMappingSubdist": true,
+        "canManageSubdist": false,
+        "canManageActivity": false
+      },
+      "grid": {
+        "headers": [
+          "ACTION",
+          "KODE",
+          "NAMA ACTIVITY",
+          "KATEGORI",
+          "FEE",
+          "FEE (%)"
+        ],
+        "rows": [
+          {
+            "text": "380202 CONSUMER OFFER FEE DROPDOWN_SEGMENT3 No 0%",
+            "btns": []
+          }
+        ],
+        "addVisible": false
+      },
+      "clicked_edit": {
+        "ok": false,
+        "reason": "no_edit_btn"
+      },
+      "fee_ui": {
+        "hasModal": true,
+        "modalId": "modalPickActivity",
+        "inputs": [],
+        "save": [],
+        "bodySnippet": "\n    \n        \n            \n                Pilih Activity\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                Kode\n                                Nama\n                                Kategori\n                            \n                        \n                        \n                    \n                \n            \n            \n                Tutup\n                Tambahkan\n            \n        \n    \n"
+      },
+      "can_edit_fee": false,
+      "evidence": "MOM05_UH_CCD_fee_edit.png"
+    },
+    {
+      "role": "Financial Accounting",
+      "access": {
+        "canViewMappingSubdist": true,
+        "canManageSubdist": false,
+        "canManageActivity": true
+      },
+      "grid": {
+        "headers": [
+          "ACTION",
+          "KODE",
+          "NAMA ACTIVITY",
+          "KATEGORI",
+          "FEE",
+          "FEE (%)"
+        ],
+        "rows": [
+          {
+            "text": "Edit Lepas 380202 CONSUMER OFFER FEE DROPDOWN_SEGMENT3 No 0%",
+            "btns": [
+              {
+                "text": "Edit",
+                "cls": "btn btn-sm btn-outline-primary btn-edit-activity me-1",
+                "disabled": false,
+                "visible": true
+              },
+              {
+                "text": "Lepas",
+                "cls": "btn btn-sm btn-outline-danger btn-unlink-activity",
+                "disabled": false,
+                "visible": true
+              }
+            ]
+          }
+        ],
+        "addVisible": true
+      },
+      "clicked_edit": {
+        "ok": true,
+        "text": "Edit"
+      },
+      "fee_ui": {
+        "hasModal": true,
+        "modalId": "modalPickActivity",
+        "inputs": [],
+        "save": [],
+        "bodySnippet": "\n    \n        \n            \n                Pilih Activity\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                Kode\n                                Nama\n                                Kategori\n                            \n                        \n                        \n                    \n                \n            \n            \n                Tutup\n                Tambahkan\n            \n        \n    \n"
+      },
+      "can_edit_fee": false,
+      "evidence": "MOM05_Financial_Accounting_fee_edit.png"
+    },
+    {
+      "role": "RAF",
+      "access": {
+        "canViewMappingSubdist": true,
+        "canManageSubdist": true,
+        "canManageActivity": false
+      },
+      "grid": {
+        "headers": [
+          "ACTION",
+          "KODE",
+          "NAMA ACTIVITY",
+          "KATEGORI",
+          "FEE",
+          "FEE (%)"
+        ],
+        "rows": [
+          {
+            "text": "380202 CONSUMER OFFER FEE DROPDOWN_SEGMENT3 No 0%",
+            "btns": []
+          }
+        ],
+        "addVisible": false
+      },
+      "clicked_edit": {
+        "ok": false,
+        "reason": "no_edit_btn"
+      },
+      "fee_ui": {
+        "hasModal": true,
+        "modalId": "modalPickActivity",
+        "inputs": [],
+        "save": [],
+        "bodySnippet": "\n    \n        \n            \n                Pilih Activity\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                Kode\n                                Nama\n                                Kategori\n                            \n                        \n                        \n                    \n                \n            \n            \n                Tutup\n                Tambahkan\n            \n        \n    \n"
+      },
+      "can_edit_fee": false,
+      "evidence": "MOM05_RAF_fee_edit.png"
+    }
+  ],
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom05_uhccd_fee_2026_10_19_16-35-24"
+}

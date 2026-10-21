@@ -1,0 +1,31 @@
+{
+  "mkpp": "26.10/MKPP-MIM/0061.000",
+  "claim_id": "",
+  "claim_doc": "",
+  "steps": [
+    {
+      "step": 1,
+      "title": "Buat kontrak dana (MKPP)",
+      "status": "Pass",
+      "detail": "(resume) DocNo=26.10/MKPP-MIM/0061.000",
+      "evidence": "",
+      "at": "19/10/2026 15:06:12"
+    },
+    {
+      "step": 2,
+      "title": "Atasan setujui kontrak",
+      "status": "Pass",
+      "detail": "(resume) 26.10/MKPP-MIM/0061.000 sudah approved",
+      "evidence": "",
+      "at": "19/10/2026 15:06:12"
+    },
+    {
+      "step": 3,
+      "title": "Subdist buat & simpan klaim",
+      "status": "Fail",
+      "detail": "partner='050311 | CATUR SENTOSA ANUGERAH, PT (BANDUNG SELATAN) (050311)' activity='CONSUMER OFFER (380201)' hidden={'TXT_PARTNER_NAME': '050311 | CATUR SENTOSA ANUGERAH, PT (BANDUNG SELATAN) (050311)', 'TXT_ACTIVITY': 'CONSUMER OFFER (380201)', 'INT_ACTIVITY_ID': 380201, 'INT_PARTNER_ID': ''} mkpp_row='Detail\\t\\t | 26.10/MKPP-MIM/0061.000 | \\t | \\t | APPROVED | \\t |  | 5-step MKPP 1019-' id=0 doc= alert='×\\nNomor Faktur Pajak pada baris ke-1 harus 17 nomor, jika kosong tidak masalah.' save_ok=False",
+      "evidence": "03f_after_save.png",
+      "at": "19/10/2026 15:08:52"
+    }
+  ]
+}

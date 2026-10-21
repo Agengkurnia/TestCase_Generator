@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Comsup/falcon/Prototype"
+		},
+		{
+			"path": "../../../../Comsup/MAVEN"
+		},
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../Comsup/PRM"
+		},
+		{
+			"path": "../../../../Comsup/KN2022_KCO_KDS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "PersonalWeb"
+	}
+}

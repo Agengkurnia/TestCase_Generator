@@ -1,0 +1,47 @@
+{
+  "mkpp": "26.10/MKPP-MIM/0061.000",
+  "claim_id": "5331",
+  "claim_doc": "26.10/KLAIM-CSA/037",
+  "steps": [
+    {
+      "step": 1,
+      "title": "Buat kontrak dana (MKPP)",
+      "status": "Pass",
+      "detail": "(resume) mkpp=26.10/MKPP-MIM/0061.000",
+      "evidence": "",
+      "at": "19/10/2026 15:12:27"
+    },
+    {
+      "step": 2,
+      "title": "Atasan setujui kontrak",
+      "status": "Pass",
+      "detail": "(resume) sudah approved",
+      "evidence": "",
+      "at": "19/10/2026 15:12:27"
+    },
+    {
+      "step": 3,
+      "title": "Subdist buat & simpan klaim",
+      "status": "Pass",
+      "detail": "(resume) id=5331 doc=26.10/KLAIM-CSA/037",
+      "evidence": "",
+      "at": "19/10/2026 15:12:27"
+    },
+    {
+      "step": 4,
+      "title": "ABM tandai siap kirim",
+      "status": "Pass",
+      "detail": "claim_id=5331 readyYes=True",
+      "evidence": "04_abm_ready.png",
+      "at": "19/10/2026 15:12:45"
+    },
+    {
+      "step": 5,
+      "title": "Kirim klaim ke tahap akhir",
+      "status": "Pass",
+      "detail": "id=5331 status='APPROVED' alert='×\\nBerhasil men-submit dokumen.'",
+      "evidence": "05_muslih_submit.png",
+      "at": "19/10/2026 15:13:01"
+    }
+  ]
+}

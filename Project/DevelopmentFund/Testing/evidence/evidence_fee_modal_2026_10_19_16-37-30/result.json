@@ -1,0 +1,64 @@
+[
+  {
+    "role": "UH CCD",
+    "access": {
+      "canViewMappingSubdist": true,
+      "canManageSubdist": false,
+      "canManageActivity": false
+    },
+    "editBtnCount": 0,
+    "clicked": false,
+    "fee": {
+      "modalShown": false,
+      "bolFee": {
+        "checked": false,
+        "disabled": false,
+        "visible": false
+      },
+      "feePct": {
+        "value": "",
+        "disabled": false,
+        "readOnly": false,
+        "visible": false
+      },
+      "save": {
+        "disabled": false,
+        "visible": false,
+        "text": "Simpan"
+      }
+    },
+    "can_set_fee": false,
+    "evidence": "MOM05_fee_UH_CCD.png"
+  },
+  {
+    "role": "Financial Accounting",
+    "access": {
+      "canViewMappingSubdist": true,
+      "canManageSubdist": false,
+      "canManageActivity": true
+    },
+    "editBtnCount": 1,
+    "clicked": true,
+    "fee": {
+      "modalShown": true,
+      "bolFee": {
+        "checked": false,
+        "disabled": false,
+        "visible": true
+      },
+      "feePct": {
+        "value": "0",
+        "disabled": false,
+        "readOnly": false,
+        "visible": true
+      },
+      "save": {
+        "disabled": false,
+        "visible": true,
+        "text": "Simpan"
+      }
+    },
+    "can_set_fee": true,
+    "evidence": "MOM05_fee_Financial_Accounting.png"
+  }
+]

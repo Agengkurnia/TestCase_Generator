@@ -1,0 +1,52 @@
+{
+  "periodFrom": "10/05/2026",
+  "periodTo": "12/31/2026",
+  "budget": 10000,
+  "noBudget": [
+    "ADYAJATI LESTARI",
+    "ANUGERAH JAYA TJEMERLANG",
+    "DAS R2",
+    "FAJAR LAUT",
+    "HOSADA GROUP",
+    "JAYA SUBUR GROUP",
+    "LANDIPO",
+    "MANDIRI TRI MAKMUR GROUP",
+    "TANTRI DELTA UTAMA GROUP"
+  ],
+  "documents": [
+    {
+      "n": 3,
+      "name": "CSA",
+      "site": "400310",
+      "activity": "CONSUMER OFFER FEE",
+      "docNo": "26.10/MKPP-MIM/0023.000",
+      "status": "ON PROGRESS APPROVAL",
+      "amount": 10000,
+      "tier1": true
+    },
+    {
+      "n": 10,
+      "name": "PUTRA BUMI ASIH",
+      "site": "310103",
+      "activity": "CONSUMER OFFER FEE",
+      "docNo": "26.10/MKPP-MIM/0030.000",
+      "status": "ON PROGRESS APPROVAL",
+      "amount": 10000,
+      "tier1": true
+    }
+  ],
+  "prmChecks": [
+    {
+      "siteCode": "400310",
+      "docNo": "26.10/MKPP-MIM/0023.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0023.000 APPROVED 0.00 10,000.00 CONSUMER OFFER FEE (380202)"
+    },
+    {
+      "siteCode": "310103",
+      "docNo": "26.10/MKPP-MIM/0030.000",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0030.000 APPROVED 0.00 10,000.00 CONSUMER OFFER FEE (380202)"
+    }
+  ]
+}

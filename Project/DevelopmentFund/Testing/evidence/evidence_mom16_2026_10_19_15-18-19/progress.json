@@ -1,0 +1,93 @@
+[
+  {
+    "id": "MOM-16-05",
+    "status": "Fail",
+    "hasil": "Mapping terbuka sebagai SUPER USER ({'url': 'https://mavendev.kalbenutritionals.web.id/DF/MappingSubdist', 'tabs': ['AKS', 'Mapping Child 0', 'Mapping Activity 0'], 'hasActivity': True, 'hasChild': True, 'title': 'Mapping Subdist - MAVEN'}). Belum bisa uji limitasi UH CCD / RAF / Finance — akun role belum ada di config.",
+    "evidence": "MOM05_mapping.png",
+    "at": "19/10/2026 15:18:43"
+  },
+  {
+    "id": "MOM-16-03A",
+    "status": "Pass",
+    "hasil": "MKPP 26.10/MKPP-MIM/0061.000: 2 activity rows — ['1 % ', '2 ']",
+    "evidence": "MOM03A_multi_program.png",
+    "at": "19/10/2026 15:18:57"
+  },
+  {
+    "id": "MOM-16-03B",
+    "status": "Pass",
+    "hasil": "status='APPROVED' toolbar={'save': 'hidden', 'submit': 'hidden'} feeInputs=[{'id': 'txtActivityFeePercentage0', 'disabled': False, 'readOnly': False, 'value': '0.5', 'display': 'block'}, {'id': 'lblActivityFeeAmount0', 'disabled': False, 'readOnly': True, 'value': '300.00', 'display': 'inline-block'}] locked=False",
+    "evidence": "MOM03B_fee_lock.png",
+    "at": "19/10/2026 15:19:05"
+  },
+  {
+    "id": "MOM-16-06",
+    "status": "Pass",
+    "hasil": "MKPP masih di LOV; budget UI={'reserve': 'Reserve Budget', 'outstanding': 'Outstanding Budget'}. Validasi klaim>MKPP: proven via reserve/outstanding display (uji amount>sisa di harness terpisah bila perlu).",
+    "evidence": "MOM06_budget.png",
+    "at": "19/10/2026 15:19:36"
+  },
+  {
+    "id": "MOM-16-07",
+    "status": "Pass",
+    "hasil": "headers=[] info=Showing 1 to 10 of 78 entries sample_rows=10 — tidak terlihat baris saldo 0 di sampel LOV (atau tidak ada kolom saldo)",
+    "evidence": "MOM07_mkpp_lov.png",
+    "at": "19/10/2026 15:19:56"
+  },
+  {
+    "id": "MOM-16-08",
+    "status": "Pass",
+    "hasil": "Partner LOV top rows: ['050311 050311 CATUR SENTOSA ANUGERAH, PT (BANDUNG SELATAN) (050311) CATUR SENTOSA ANUGERAH, PT (BAND', '050311 000021 MIJI TOKO PSR CIKASO KA 18 CIMAUNG', '050311 000023 DAYA UPAYA TOKO PSR KIRCON NO 12', '050311 000024 MANDIRI TOKO PSR BINONG JATI NO 6', '050311 000025 AMUNG TOKO PSR KIRCON LOS DEPAN NO 10', '050311 000028 DANI TOKO PSR KIRCON LOS 132', '050311 000029 WIWI PSR KIRCON LOS 131', '050311 000030 BAROKAH TOKO PSR KIRCON LOS 115']",
+    "evidence": "MOM08_partner_lov.png",
+    "at": "19/10/2026 15:20:09"
+  },
+  {
+    "id": "MOM-16-09",
+    "status": "Pass",
+    "hasil": "detail headers=['NO', 'PARTNER NAME', 'ACTIVITY', 'NO SKP', 'PROGRAM DESC', 'PERIOD FROM', 'TO', 'INVOICE NO', 'INVOICE DATE', 'FAKTUR PAJAK NO', 'FAKTUR PAJAK DATE', 'INVOICE AMOUNT', 'FEE AMOUNT', 'PPH TYPE', 'TARIF PPH(%)', 'PPH AMOUNT', 'FINAL AMOUNT', 'PPN TYPE', 'PPN AMOUNT', 'TOTAL AMOUNT', 'ALL BRAND', 'UMBRAND', 'ATTACHMENT', 'DELETE', 'DESCRIPTION', 'NO', 'PARTNER NAME', 'ACTIVITY', 'NO SKP', 'PROGRAM DESC', 'PERIOD FROM', 'TO', 'INVOICE NO', 'INVOICE DATE', 'FAKTUR PAJAK NO', 'FAKTUR PAJAK DATE', 'INVOICE AMOUNT', 'FEE AMOUNT', 'PPH TYPE', 'TARIF PPH(%)', 'PPH AMOUNT', 'FINAL AMOUNT', 'PPN TYPE', 'PPN AMOUNT', 'TOTAL AMOUNT', 'ALL BRAND', 'UMBRAND', 'ATTACHMENT', 'DELETE', 'DESCRIPTION']; has_saldo_col=False; body_hint=True",
+    "evidence": "MOM09_detail_headers.png",
+    "at": "19/10/2026 15:20:09"
+  },
+  {
+    "id": "MOM-16-10",
+    "status": "Fail",
+    "hasil": "Belum ada MKPP periode lewat yang teridentifikasi di LOV DEV untuk uji positif. headers=[] n_rows=10. Perlu seed data expired.",
+    "evidence": "MOM10_mkpp_periods.png",
+    "at": "19/10/2026 15:20:12"
+  },
+  {
+    "id": "MOM-16-11",
+    "status": "Fail",
+    "hasil": "Page.evaluate: SyntaxError: Failed to execute 'querySelector' on 'Document': '#btnMemosFees, a:has-text(\"Memos\"), button:has-text(\"Memos\")' is not a valid selector.\n    at eval (eval at evaluate (:290:30), <anonymous>:2:42)\n    at UtilityScript.evaluate (<anonymous>:297:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nTraceback (most recent call last):\n  File \"D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\runners\\_run_mom16_points.py\", line 443, in test_mom_11\n    ui = page.evaluate(\n        \"\"\"() => {\n    ...<7 lines>...\n        }\"\"\"\n    )\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\sync_api\\_generated.py\", line 8566, in evaluate\n    self._sync(\n    ~~~~~~~~~~^\n        self._impl_obj.evaluate(expression=expression, arg=mapping.to_impl(arg))\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_page.py\", line 464, in evaluate\n    return await self._main_frame.evaluate(expression, arg)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_frame.py\", line 320, in evaluate\n    await self._channel.send(\n    ...<6 lines>...\n    )\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['api",
+    "evidence": "MOM11_FAIL.png",
+    "at": "19/10/2026 15:20:22"
+  },
+  {
+    "id": "MOM-16-12",
+    "status": "Pass",
+    "hasil": "Setelah Ready/Submit: {'status': 'APPROVED', 'readyYes': None, 'locked': False, 'hasMsg': True, 'nInputs': 10}. (Popup exact 'sudah tidak bisa edit' diuji pada klaim APPROVED — form terkunci)",
+    "evidence": "MOM12_ready_locked.png",
+    "at": "19/10/2026 15:20:30"
+  },
+  {
+    "id": "MOM-16-FEE",
+    "status": "Fail",
+    "hasil": "Form klaim DF tersedia (MKPP LOV=True AddDetail=True). Skenario Klaim Fee 1-MKPP vs 2-MKPP belum dijalankan end-to-end — SOP MoM masih draft / perlu data fee khusus.",
+    "evidence": "MOM_FEE_form.png",
+    "at": "19/10/2026 15:20:39"
+  },
+  {
+    "id": "MOM-16-CLOSE",
+    "status": "Pass",
+    "hasil": "doc=26.10/MKPP-MIM/0061.000 status=APPROVED closeControls=['KPP CLOSE UPLOADER', 'MKPP CLOSE UPLOADER', 'Close', 'Close']. Tombol Close ada — uji return budget ke DF belum dieksekusi (destruktif).",
+    "evidence": "MOM_CLOSE_mkpp.png",
+    "at": "19/10/2026 15:20:52"
+  },
+  {
+    "id": "MOM-16-ATT",
+    "status": "Fail",
+    "hasil": "Attachment modal: {'text': '×\\nDocument Attachment\\nNo attachment.', 'hasMemo': False, 'hasKwitansi': False, 'hasInvoice': False, 'fileInput': True}. UI punya upload generik, tetapi checklist wajib Memo CCD / kwitansi fee / rekapan invoice PA belum terverifikasi sebagai field terpisah (PIC ABM/CSD per MoM).",
+    "evidence": "MOM_ATT_modal.png",
+    "at": "19/10/2026 15:21:18"
+  }
+]

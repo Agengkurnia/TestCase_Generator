@@ -1,0 +1,33 @@
+{
+  "before": [
+    {
+      "id": "txtFeeDevfundAdm",
+      "name": "txtFeeDevfundAdm",
+      "value": "DF FEE"
+    },
+    {
+      "id": "txtDetailFeeAmount0",
+      "name": "",
+      "value": "0.00"
+    }
+  ],
+  "after": [
+    {
+      "id": "txtFeeDevfundAdm",
+      "name": "txtFeeDevfundAdm",
+      "value": "DF FEE"
+    },
+    {
+      "id": "txtDetailFeeAmount0",
+      "name": "",
+      "value": "1.50"
+    }
+  ],
+  "inv": "300",
+  "dtl": {
+    "DEC_INVOICE_AMT": 300,
+    "DEC_FEE_AMT": null,
+    "DEC_FEE_PCT": null,
+    "TXT_ACTIVITY": "CONSUMER OFFER (380201)"
+  }
+}

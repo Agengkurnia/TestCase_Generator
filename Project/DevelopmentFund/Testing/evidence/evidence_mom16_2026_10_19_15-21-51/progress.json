@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MOM-16-09",
+    "status": "Fail",
+    "hasil": "detail headers=[]; has_sisa_saldo_col=False. Tidak ada kolom 'sisa saldo' per activity di grid detail (ada FEE AMOUNT, bukan sisa saldo MKPP).",
+    "evidence": "MOM09_detail_headers.png",
+    "at": "19/10/2026 15:22:00"
+  },
+  {
+    "id": "MOM-16-11",
+    "status": "Pass",
+    "hasil": "Memos&Fees=True Attachment=True viewHint=True mkpp= near='' sample=['Cari MKPP btnLOVMemoMKPP', 'txtMemoMKPP', 'Export MKPP ke Excel btnExportLOVMemoMKPP', 'Memos & Fees btnLampiranMkpp', 'Attachment btnHeaderAttachment', 'Template Excel btnDownloadDetailExcelTemplateKDSDF', 'fileAttachmentKDSDF', 'Memos']",
+    "evidence": "MOM11_memo.png",
+    "at": "19/10/2026 15:22:10"
+  }
+]

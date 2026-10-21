@@ -1,0 +1,23 @@
+{
+  "pass": 4,
+  "fail": 0,
+  "total": 4,
+  "state": {
+    "mkpp": "26.10/MKPP-MIM/0064.000",
+    "claims": [
+      {
+        "id": "5334",
+        "doc": "26.10/KLAIM-CSA/039",
+        "status": "DRAFT",
+        "sub": "050311"
+      }
+    ]
+  },
+  "excel": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\reports\\DF_E2E_Corrected_2026_10_20_10-25-20.xlsx",
+  "evidence": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_resume_2026_10_20_10-25-20",
+  "roles": {
+    "creator": "Muslih",
+    "mkpp_approver": "PATRICK.YOHANNES",
+    "abm": "fahmi.permadi"
+  }
+}

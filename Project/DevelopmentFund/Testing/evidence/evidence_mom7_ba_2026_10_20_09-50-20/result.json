@@ -1,0 +1,98 @@
+{
+  "id": "MOM-16-FEE",
+  "status": "Fail",
+  "hasil": "BEFORE OK: semua LOV Sisa>0 (n=1, rows=[('CONSUMER OFFER (380201)', '300')]). AFTER: n=1 allPositive=True target_still_present=True after_sisa=300. consume={'alert': '×\\nOutstanding Budget tidak boleh kurang dari 0.', 'meta': {'id': '0', 'doc': ''}}. Belum ada bukti activity fee habis hilang dari LOV (perlu consume sampai sisa=0).",
+  "before": {
+    "headers": [
+      "Pilih",
+      "Activity",
+      "Program Desc",
+      "Period From",
+      "period To",
+      "Fee",
+      "Fee Percentage",
+      "Sisa Saldo"
+    ],
+    "idxSisa": 7,
+    "info": "Showing 1 to 1 of 1 entries",
+    "n": 1,
+    "rows": [
+      {
+        "act": "CONSUMER OFFER (380201)",
+        "sisaRaw": "300",
+        "sisaNum": 300,
+        "fee": "Yes",
+        "feePct": "0.5%",
+        "text": "CONSUMER OFFER (380201) 5-step MKPP 1019-1458 10/19/2026 12:00:00 AM 12/31/2026 12:00:00 AM Yes 0.5% 300",
+        "cells": [
+          "",
+          "CONSUMER OFFER (380201)",
+          "5-step MKPP 1019-1458",
+          "10/19/2026 12:00:00 AM",
+          "12/31/2026 12:00:00 AM",
+          "Yes",
+          "0.5%",
+          "300",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "allPositive": true,
+    "anyZero": false
+  },
+  "after": {
+    "headers": [
+      "Pilih",
+      "Activity",
+      "Program Desc",
+      "Period From",
+      "period To",
+      "Fee",
+      "Fee Percentage",
+      "Sisa Saldo"
+    ],
+    "idxSisa": 7,
+    "info": "Showing 1 to 1 of 1 entries",
+    "n": 1,
+    "rows": [
+      {
+        "act": "CONSUMER OFFER (380201)",
+        "sisaRaw": "300",
+        "sisaNum": 300,
+        "fee": "Yes",
+        "feePct": "0.5%",
+        "text": "CONSUMER OFFER (380201) 5-step MKPP 1019-1458 10/19/2026 12:00:00 AM 12/31/2026 12:00:00 AM Yes 0.5% 300",
+        "cells": [
+          "",
+          "CONSUMER OFFER (380201)",
+          "5-step MKPP 1019-1458",
+          "10/19/2026 12:00:00 AM",
+          "12/31/2026 12:00:00 AM",
+          "Yes",
+          "0.5%",
+          "300",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "allPositive": true,
+    "anyZero": false
+  },
+  "evidence": [
+    "MOM7_01_BEFORE_activity_lov.png",
+    "MOM7_04_AFTER_activity_lov.png"
+  ],
+  "consume": {
+    "alert": "×\nOutstanding Budget tidak boleh kurang dari 0.",
+    "meta": {
+      "id": "0",
+      "doc": ""
+    }
+  },
+  "at": "20/10/2026 09:52:37",
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom7_ba_2026_10_20_09-50-20"
+}

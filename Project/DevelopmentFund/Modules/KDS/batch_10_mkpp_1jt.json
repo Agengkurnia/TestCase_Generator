@@ -1,0 +1,667 @@
+{
+  "stamp": "10050940",
+  "periodFrom": "10/05/2026",
+  "periodTo": "12/31/2026",
+  "budget": 1000000,
+  "documents": [
+    {
+      "n": 1,
+      "docNo": "26.10/MKPP-MIM/0006.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "050311",
+          "subdist": "BANDUNG SELATAN",
+          "search": "BANDUNG SELATAN",
+          "prefix": "BDO",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/BDO-10050940-1-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/BDO-10050940-1-2",
+              "amount": 250000
+            }
+          ]
+        },
+        {
+          "siteCode": "040310",
+          "subdist": "JAKARTA SELATAN",
+          "search": "JAKARTA SELATAN",
+          "prefix": "JKS",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/JKS-10050940-1-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/JKS-10050940-1-2",
+              "amount": 250000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    },
+    {
+      "n": 2,
+      "docNo": "26.10/MKPP-MIM/0007.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "400310",
+          "subdist": "JAKARTA BARAT",
+          "search": "JAKARTA BARAT",
+          "prefix": "JKB",
+          "activity": "CONSUMER OFFER",
+          "amount": 400000,
+          "skp": [
+            {
+              "no": "SKP/2026/JKB-10050940-2-1",
+              "amount": 200000
+            },
+            {
+              "no": "SKP/2026/JKB-10050940-2-2",
+              "amount": 200000
+            }
+          ]
+        },
+        {
+          "siteCode": "400305",
+          "subdist": "SERANG",
+          "search": "SERANG",
+          "prefix": "SRG",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/SRG-10050940-2-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/SRG-10050940-2-2",
+              "amount": 150000
+            }
+          ]
+        },
+        {
+          "siteCode": "400306",
+          "subdist": "TANGERANG KABUPATEN",
+          "search": "TANGERANG KABUPATEN",
+          "prefix": "TGK",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/TGK-10050940-2-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/TGK-10050940-2-2",
+              "amount": 150000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    },
+    {
+      "n": 3,
+      "docNo": "26.10/MKPP-MIM/0008.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "400309",
+          "subdist": "TANGERANG KOTA",
+          "search": "TANGERANG KOTA",
+          "prefix": "TGN",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/TGN-10050940-3-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/TGN-10050940-3-2",
+              "amount": 250000
+            }
+          ]
+        },
+        {
+          "siteCode": "050311",
+          "subdist": "BANDUNG SELATAN",
+          "search": "BANDUNG SELATAN",
+          "prefix": "BDO",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/BDO-10050940-3-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/BDO-10050940-3-2",
+              "amount": 250000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    },
+    {
+      "n": 4,
+      "docNo": "26.10/MKPP-MIM/0009.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "040310",
+          "subdist": "JAKARTA SELATAN",
+          "search": "JAKARTA SELATAN",
+          "prefix": "JKS",
+          "activity": "CONSUMER OFFER",
+          "amount": 400000,
+          "skp": [
+            {
+              "no": "SKP/2026/JKS-10050940-4-1",
+              "amount": 200000
+            },
+            {
+              "no": "SKP/2026/JKS-10050940-4-2",
+              "amount": 200000
+            }
+          ]
+        },
+        {
+          "siteCode": "400310",
+          "subdist": "JAKARTA BARAT",
+          "search": "JAKARTA BARAT",
+          "prefix": "JKB",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/JKB-10050940-4-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/JKB-10050940-4-2",
+              "amount": 150000
+            }
+          ]
+        },
+        {
+          "siteCode": "400305",
+          "subdist": "SERANG",
+          "search": "SERANG",
+          "prefix": "SRG",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/SRG-10050940-4-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/SRG-10050940-4-2",
+              "amount": 150000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    },
+    {
+      "n": 5,
+      "docNo": "26.10/MKPP-MIM/0010.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "400306",
+          "subdist": "TANGERANG KABUPATEN",
+          "search": "TANGERANG KABUPATEN",
+          "prefix": "TGK",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/TGK-10050940-5-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/TGK-10050940-5-2",
+              "amount": 250000
+            }
+          ]
+        },
+        {
+          "siteCode": "400309",
+          "subdist": "TANGERANG KOTA",
+          "search": "TANGERANG KOTA",
+          "prefix": "TGN",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/TGN-10050940-5-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/TGN-10050940-5-2",
+              "amount": 250000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    },
+    {
+      "n": 6,
+      "docNo": "26.10/MKPP-MIM/0011.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "050311",
+          "subdist": "BANDUNG SELATAN",
+          "search": "BANDUNG SELATAN",
+          "prefix": "BDO",
+          "activity": "CONSUMER OFFER",
+          "amount": 400000,
+          "skp": [
+            {
+              "no": "SKP/2026/BDO-10050940-6-1",
+              "amount": 200000
+            },
+            {
+              "no": "SKP/2026/BDO-10050940-6-2",
+              "amount": 200000
+            }
+          ]
+        },
+        {
+          "siteCode": "040310",
+          "subdist": "JAKARTA SELATAN",
+          "search": "JAKARTA SELATAN",
+          "prefix": "JKS",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/JKS-10050940-6-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/JKS-10050940-6-2",
+              "amount": 150000
+            }
+          ]
+        },
+        {
+          "siteCode": "400306",
+          "subdist": "TANGERANG KABUPATEN",
+          "search": "TANGERANG KABUPATEN",
+          "prefix": "TGK",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/TGK-10050940-6-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/TGK-10050940-6-2",
+              "amount": 150000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    },
+    {
+      "n": 7,
+      "docNo": "26.10/MKPP-MIM/0012.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "400305",
+          "subdist": "SERANG",
+          "search": "SERANG",
+          "prefix": "SRG",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/SRG-10050940-7-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/SRG-10050940-7-2",
+              "amount": 250000
+            }
+          ]
+        },
+        {
+          "siteCode": "400310",
+          "subdist": "JAKARTA BARAT",
+          "search": "JAKARTA BARAT",
+          "prefix": "JKB",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/JKB-10050940-7-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/JKB-10050940-7-2",
+              "amount": 250000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    },
+    {
+      "n": 8,
+      "docNo": "26.10/MKPP-MIM/0013.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "400309",
+          "subdist": "TANGERANG KOTA",
+          "search": "TANGERANG KOTA",
+          "prefix": "TGN",
+          "activity": "CONSUMER OFFER",
+          "amount": 400000,
+          "skp": [
+            {
+              "no": "SKP/2026/TGN-10050940-8-1",
+              "amount": 200000
+            },
+            {
+              "no": "SKP/2026/TGN-10050940-8-2",
+              "amount": 200000
+            }
+          ]
+        },
+        {
+          "siteCode": "050311",
+          "subdist": "BANDUNG SELATAN",
+          "search": "BANDUNG SELATAN",
+          "prefix": "BDO",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/BDO-10050940-8-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/BDO-10050940-8-2",
+              "amount": 150000
+            }
+          ]
+        },
+        {
+          "siteCode": "040310",
+          "subdist": "JAKARTA SELATAN",
+          "search": "JAKARTA SELATAN",
+          "prefix": "JKS",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/JKS-10050940-8-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/JKS-10050940-8-2",
+              "amount": 150000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    },
+    {
+      "n": 9,
+      "docNo": "26.10/MKPP-MIM/0014.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "400310",
+          "subdist": "JAKARTA BARAT",
+          "search": "JAKARTA BARAT",
+          "prefix": "JKB",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/JKB-10050940-9-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/JKB-10050940-9-2",
+              "amount": 250000
+            }
+          ]
+        },
+        {
+          "siteCode": "400306",
+          "subdist": "TANGERANG KABUPATEN",
+          "search": "TANGERANG KABUPATEN",
+          "prefix": "TGK",
+          "activity": "CONSUMER OFFER",
+          "amount": 500000,
+          "skp": [
+            {
+              "no": "SKP/2026/TGK-10050940-9-1",
+              "amount": 250000
+            },
+            {
+              "no": "SKP/2026/TGK-10050940-9-2",
+              "amount": 250000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    },
+    {
+      "n": 10,
+      "docNo": "26.10/MKPP-MIM/0015.000",
+      "statusAfterSubmit": "ON PROGRESS APPROVAL",
+      "activities": [
+        {
+          "siteCode": "400305",
+          "subdist": "SERANG",
+          "search": "SERANG",
+          "prefix": "SRG",
+          "activity": "CONSUMER OFFER",
+          "amount": 400000,
+          "skp": [
+            {
+              "no": "SKP/2026/SRG-10050940-10-1",
+              "amount": 200000
+            },
+            {
+              "no": "SKP/2026/SRG-10050940-10-2",
+              "amount": 200000
+            }
+          ]
+        },
+        {
+          "siteCode": "400309",
+          "subdist": "TANGERANG KOTA",
+          "search": "TANGERANG KOTA",
+          "prefix": "TGN",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/TGN-10050940-10-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/TGN-10050940-10-2",
+              "amount": 150000
+            }
+          ]
+        },
+        {
+          "siteCode": "040310",
+          "subdist": "JAKARTA SELATAN",
+          "search": "JAKARTA SELATAN",
+          "prefix": "JKS",
+          "activity": "CONSUMER OFFER",
+          "amount": 300000,
+          "skp": [
+            {
+              "no": "SKP/2026/JKS-10050940-10-1",
+              "amount": 150000
+            },
+            {
+              "no": "SKP/2026/JKS-10050940-10-2",
+              "amount": 150000
+            }
+          ]
+        }
+      ],
+      "tier1": true,
+      "status": "APPROVED"
+    }
+  ],
+  "prmChecks": [
+    {
+      "docNo": "26.10/MKPP-MIM/0006.000",
+      "subdist": "BANDUNG SELATAN",
+      "amount": 500000,
+      "siteCode": "050311",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0006.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0008.000",
+      "subdist": "BANDUNG SELATAN",
+      "amount": 500000,
+      "siteCode": "050311",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0008.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0011.000",
+      "subdist": "BANDUNG SELATAN",
+      "amount": 400000,
+      "siteCode": "050311",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0011.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0013.000",
+      "subdist": "BANDUNG SELATAN",
+      "amount": 300000,
+      "siteCode": "050311",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0013.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0006.000",
+      "subdist": "JAKARTA SELATAN",
+      "amount": 500000,
+      "siteCode": "040310",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0006.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0009.000",
+      "subdist": "JAKARTA SELATAN",
+      "amount": 400000,
+      "siteCode": "040310",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0009.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0011.000",
+      "subdist": "JAKARTA SELATAN",
+      "amount": 300000,
+      "siteCode": "040310",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0011.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0013.000",
+      "subdist": "JAKARTA SELATAN",
+      "amount": 300000,
+      "siteCode": "040310",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0013.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0015.000",
+      "subdist": "JAKARTA SELATAN",
+      "amount": 300000,
+      "siteCode": "040310",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0015.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0007.000",
+      "subdist": "JAKARTA BARAT",
+      "amount": 400000,
+      "siteCode": "400310",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0007.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0009.000",
+      "subdist": "JAKARTA BARAT",
+      "amount": 300000,
+      "siteCode": "400310",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0009.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0012.000",
+      "subdist": "JAKARTA BARAT",
+      "amount": 500000,
+      "siteCode": "400310",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0012.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    },
+    {
+      "docNo": "26.10/MKPP-MIM/0014.000",
+      "subdist": "JAKARTA BARAT",
+      "amount": 500000,
+      "siteCode": "400310",
+      "found": true,
+      "text": "Detail 26.10/MKPP-MIM/0014.000 APPROVED 0.00 1,000,000.00 CONSUMER OFFER FEE (380202)",
+      "sample": ""
+    }
+  ]
+}

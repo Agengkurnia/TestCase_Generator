@@ -1,0 +1,55 @@
+{
+  "id": "MOM-16-FEE",
+  "interpretation": "1 MKPP multi-activity each with own fee; activity whose fee balance is exhausted must NOT appear in klaim Activity LOV",
+  "status": "Fail",
+  "hasil": "MKPP 26.10/MKPP-MIM/0061.000: 2 activity di kontrak. LOV Activity klaim: 1 baris; headers=[]. has_sisa/fee_col_hint=False; zeroish_rows=[]; exhausted_in_fee_ui=[]. Setup multi-activity di 1 MKPP terbukti. Filter 'activity fee habis tidak muncul di LOV' BELUM terbukti — butuh data activity fee residual=0 (atau seed klaim fee sampai habis) lalu bandingkan LOV.",
+  "evidence": [
+    "MOM_FEE_mkpp_activities.png",
+    "MOM_FEE_activity_lov.png"
+  ],
+  "mkpp": {
+    "doc": "26.10/MKPP-MIM/0061.000",
+    "status": "APPROVED",
+    "n": 2,
+    "acts": [
+      "1 %",
+      "2"
+    ]
+  },
+  "activity_lov": {
+    "headers": [],
+    "nRows": 1,
+    "rows": [
+      {
+        "text": "CONSUMER OFFER (380201) 5-step MKPP 1019-1458 10/19/2026 12:00:00 AM 12/31/2026 12:00:00 AM Yes 0.5% 300",
+        "cells": [
+          "",
+          "CONSUMER OFFER (380201)",
+          "5-step MKPP 1019-1458",
+          "10/19/2026 12:00:00 AM",
+          "12/31/2026 12:00:00 AM",
+          "Yes",
+          "0.5%",
+          "300",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "info": "Showing 1 to 1 of 1 entries"
+  },
+  "fee_summary_ui": {
+    "hasFeeTab": true,
+    "feeBtns": [
+      {
+        "id": "btnLampiranMkpp",
+        "text": "Memos & Fees"
+      }
+    ],
+    "snippet": "PRM\nCATUR SENTOSA ANUGERAH, PT (BANDUNG SELATAN)\nPIC SUBDIST\nHome\nKlaim\nForm Klaim DEVFUND Form Klaim DEVFUND\n Find  Save  New  Print  Panduan  Close  Reject  Copy\nKDS\nDEVFUND\nID\n\t\nDate\nDoc No MKPP\n\t\n  Memos & Fees\nStatus\nGroup Account\nPartner\nOutlet\n\t\nBranch\n\t\nSupplier Code\nSupplier Site\n\t\nSupplier"
+  },
+  "fee_click_note": "Page.evaluate: Error: missing #btnMemosFees\n    at eval (eval at evaluate (:290:30), <anonymous>:3:32)\n    at UtilityScript.evaluate (<anonymous>:297:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "at": "19/10/2026 17:13:48",
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom_fee_2026_10_19_17-12-15"
+}

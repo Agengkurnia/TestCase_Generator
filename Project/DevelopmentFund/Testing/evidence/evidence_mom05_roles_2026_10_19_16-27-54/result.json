@@ -1,0 +1,138 @@
+{
+  "id": "MOM-16-05",
+  "roles_available": [
+    {
+      "t": "SUPER USER",
+      "v": "3452"
+    },
+    {
+      "t": "IT - DS",
+      "v": "3541"
+    },
+    {
+      "t": "UH CCD",
+      "v": "3544"
+    },
+    {
+      "t": "RAF",
+      "v": "3545"
+    }
+  ],
+  "probes": [
+    {
+      "ok": true,
+      "role": "SUPER USER",
+      "access": {
+        "canViewMappingSubdist": true,
+        "canManageSubdist": true,
+        "canManageActivity": true
+      },
+      "edit": {
+        "ok": true
+      },
+      "tabs": [
+        "AKS",
+        "Mapping Child 4",
+        "Mapping Activity 1"
+      ],
+      "btnAddActivity": {
+        "exists": true,
+        "visible": true,
+        "disabled": false,
+        "className": "btn btn-primary btn-sm waves-effect waves-light"
+      },
+      "btnAddChild": {
+        "exists": true,
+        "visible": true,
+        "disabled": false,
+        "className": "btn btn-primary btn-sm waves-effect waves-light"
+      },
+      "evidence_activity": "MOM05_role_SUPER_USER_activity.png",
+      "evidence_child": "MOM05_role_SUPER_USER_child.png",
+      "url": "https://mavendev.kalbenutritionals.web.id/DF/MappingSubdist",
+      "kind": "SUPER",
+      "matches_mom": true,
+      "note": "expected full; access act=True child=True; UI AddAct=True AddChild=True"
+    },
+    {
+      "ok": true,
+      "role": "UH CCD",
+      "access": {
+        "canViewMappingSubdist": true,
+        "canManageSubdist": false,
+        "canManageActivity": false
+      },
+      "edit": {
+        "ok": true
+      },
+      "tabs": [
+        "AKS",
+        "Mapping Child 4",
+        "Mapping Activity 1"
+      ],
+      "btnAddActivity": {
+        "exists": true,
+        "visible": false,
+        "disabled": true,
+        "className": "btn btn-primary btn-sm waves-effect waves-light d-none"
+      },
+      "btnAddChild": {
+        "exists": true,
+        "visible": false,
+        "disabled": true,
+        "className": "btn btn-primary btn-sm waves-effect waves-light d-none"
+      },
+      "evidence_activity": "MOM05_role_UH_CCD_activity.png",
+      "evidence_child": "MOM05_role_UH_CCD_child.png",
+      "url": "https://mavendev.kalbenutritionals.web.id/DF/MappingSubdist",
+      "kind": "UH_CCD",
+      "matches_mom": false,
+      "note": "expected Activity-only; access act=False child=False; UI AddAct=False AddChild=False"
+    },
+    {
+      "ok": true,
+      "role": "RAF",
+      "access": {
+        "canViewMappingSubdist": true,
+        "canManageSubdist": true,
+        "canManageActivity": false
+      },
+      "edit": {
+        "ok": true
+      },
+      "tabs": [
+        "AKS",
+        "Mapping Child 4",
+        "Mapping Activity 1"
+      ],
+      "btnAddActivity": {
+        "exists": true,
+        "visible": false,
+        "disabled": true,
+        "className": "btn btn-primary btn-sm waves-effect waves-light d-none"
+      },
+      "btnAddChild": {
+        "exists": true,
+        "visible": true,
+        "disabled": false,
+        "className": "btn btn-primary btn-sm waves-effect waves-light"
+      },
+      "evidence_activity": "MOM05_role_RAF_activity.png",
+      "evidence_child": "MOM05_role_RAF_child.png",
+      "url": "https://mavendev.kalbenutritionals.web.id/DF/MappingSubdist",
+      "kind": "RAF",
+      "matches_mom": true,
+      "note": "expected Child-only; access act=False child=True; UI AddAct=False AddChild=True"
+    }
+  ],
+  "status": "Fail",
+  "hasil": "Sebagian role sesuai MoM (['RAF']), belum lengkap. Tersedia di ChooseRole: ['SUPER USER', 'IT - DS', 'UH CCD', 'RAF']. probes=[{'kind': 'SUPER', 'role': 'SUPER USER', 'access': {'canViewMappingSubdist': True, 'canManageSubdist': True, 'canManageActivity': True}, 'match': True, 'note': 'expected full; access act=True child=True; UI AddAct=True AddChild=True'}, {'kind': 'UH_CCD', 'role': 'UH CCD', 'access': {'canViewMappingSubdist': True, 'canManageSubdist': False, 'canManageActivity': False}, 'match': False, 'note': 'expected Activity-only; access act=False child=False; UI AddAct=False AddChild=False'}, {'kind': 'RAF', 'role': 'RAF', 'access': {'canViewMappingSubdist': True, 'canManageSubdist': True, 'canManageActivity': False}, 'match': True, 'note': 'expected Child-only; access act=False child=True; UI AddAct=False AddChild=True'}]",
+  "evidence": [
+    "MOM05_activity_tab.png",
+    "MOM05_role_SUPER_USER_activity.png",
+    "MOM05_role_UH_CCD_activity.png",
+    "MOM05_role_RAF_activity.png"
+  ],
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom05_roles_2026_10_19_16-27-54",
+  "at": "19/10/2026 16:28:58"
+}

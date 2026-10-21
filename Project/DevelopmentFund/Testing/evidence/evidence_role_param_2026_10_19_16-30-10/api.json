@@ -1,0 +1,36 @@
+{
+  "status": 200,
+  "j": {
+    "data": {
+      "draw": 1,
+      "recordsTotal": 24,
+      "recordsFiltered": 2,
+      "data": [
+        {
+          "id": "b67b1ce8-b44c-4abf-869f-962a631d5f54",
+          "paramCode": "MAPPING_SUBDIST",
+          "paramVariable": "ROLE_SUBDIST",
+          "paramDesc": "RAF",
+          "active": true,
+          "updatedDate": "2026-09-24T11:07:56.797297+07:00",
+          "updatedBy": "USER.MAVEN"
+        },
+        {
+          "id": "3f6f793c-7894-4ca8-8ce9-2fd662d55a56",
+          "paramCode": "MAPPING_SUBDIST",
+          "paramVariable": "ROLE_ACTIVITY",
+          "paramDesc": "Financial Accounting",
+          "active": true,
+          "updatedDate": "2026-09-23T13:45:30.598827+07:00",
+          "updatedBy": "USER.MAVEN"
+        }
+      ]
+    },
+    "errorType": 0,
+    "errorMessages": "",
+    "totalRecords": 0,
+    "recordsFiltered": 0,
+    "code": 200,
+    "message": "Success"
+  }
+}

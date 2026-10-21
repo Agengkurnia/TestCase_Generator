@@ -1,0 +1,12 @@
+{
+  "status": "Pass",
+  "hasil": "Edit Mapping dibuka, tab Mapping Activity aktif. tabActive=['Mapping Activity 1'] headers=['ACTION', 'KODE', 'NAMA ACTIVITY', 'KATEGORI', 'FEE', 'FEE (%)'] nRows=1 fee=[] rows0='Edit Lepas 380202 CONSUMER OFFER FEE DROPDOWN_SEGMENT3 No 0%' | Diuji SUPER USER; limitasi role UH CCD / RAF / Finance masih butuh akun khusus.",
+  "evidence": [
+    "01_mapping_list.png",
+    "02_after_edit_click.png",
+    "03_activity_tab.png",
+    "04_activity_detail.png",
+    "05_activity_scrolled.png"
+  ],
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom05_2026_10_19_15-28-29"
+}

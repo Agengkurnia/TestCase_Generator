@@ -1,0 +1,22 @@
+{
+  "viewport": { "width": 1440, "height": 900 },
+  "headless": true,
+  "maven": {
+    "base_url": "https://mavendev.kalbenutritionals.web.id",
+    "username": "ageng.sugianto",
+    "password": "bypass",
+    "captcha": "bypass"
+  },
+  "kds": {
+    "base_url": "https://kicaokdsdev.kalbenutritionals.web.id",
+    "creator": { "username": "Muslih", "password": "bypass", "captcha": "bypass" },
+    "abm": { "username": "muhammad.prasetyo", "password": "bypass", "captcha": "bypass" },
+    "cf": { "username": "HENDRAWAN.KHO", "password": "bypass", "captcha": "bypass" }
+  },
+  "prm": {
+    "base_url": "https://newprmdev.kalbenutritionals.web.id",
+    "username": "050311",
+    "password": "bypass",
+    "captcha": "bypass"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "SV-PR-03",
+  "status": "Pass",
+  "hasil": "pre={'partner': '050311 | CATUR SENTOSA ANUGERAH, PT (BANDUNG SELATAN) (050311)', 'activity': 'CONSUMER OFFER (380201)', 'inv': 'INV/DF/1019-1557/F16', 'faktur': None, 'amt': '200.00'} faktur16=1234567890123456 first='×\\nNomor Faktur Pajak pada baris ke-1 harus 17 nomor, jika kosong tidak masalah.' final='×\\nNomor Faktur Pajak pada baris ke-1 harus 17 nomor, jika kosong tidak masalah.'",
+  "evidence": "T1_SV_PR_03_faktur16.png",
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_sv_pr_03_2026_10_19_15-57-05"
+}

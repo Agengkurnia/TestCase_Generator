@@ -1,0 +1,46 @@
+{
+  "tester": "Ageng",
+  "module_name": "Development Fund E2E Exhaustive",
+  "headless": true,
+  "viewport": { "width": 1440, "height": 900 },
+  "notes": {
+    "mkpp_approval": "Hanya sampai PATRICK.YOHANNES (tidak ada Tier2 HENDRAWAN untuk MKPP)",
+    "abm_klaim": "fahmi.permadi (bukan muhammad.prasetyo)",
+    "creator": "Muslih — create/submit MKPP + submit klaim setelah Ready",
+    "budget": "Setiap MKPP sum(activity.amount) <= mkpp_budget_cap (100000)",
+    "expanded": "cases_expanded.py + run_expanded_batch.py + generate_expanded_workbook.py"
+  },
+  "maven": {
+    "base_url": "https://mavendev.kalbenutritionals.web.id",
+    "username": "ageng.sugianto",
+    "password": "bypass",
+    "captcha": "bypass",
+    "mapping_url": "/DF/MappingSubdist",
+    "monitoring_url": "/DF/MonitoringSubdist"
+  },
+  "kds": {
+    "base_url": "https://kicaokdsdev.kalbenutritionals.web.id",
+    "creator": { "username": "Muslih", "password": "bypass", "captcha": "bypass" },
+    "mkpp_approver": { "username": "PATRICK.YOHANNES", "password": "bypass", "captcha": "bypass" },
+    "mkpp_approver_t1": { "username": "PATRICK.YOHANNES", "password": "bypass", "captcha": "bypass" },
+    "abm": { "username": "fahmi.permadi", "password": "bypass", "captcha": "bypass" },
+    "cf": { "username": "Muslih", "password": "bypass", "captcha": "bypass" }
+  },
+  "prm": {
+    "base_url": "https://newprmdev.kalbenutritionals.web.id",
+    "klaim_url": "/Klaim/KlaimKDSDF",
+    "subdists": [
+      { "kmmd": "050311", "name": "BANDUNG SELATAN", "password": "bypass", "captcha": "bypass" },
+      { "kmmd": "040310", "name": "JAKARTA SELATAN", "password": "bypass", "captcha": "bypass" }
+    ]
+  },
+  "test_data": {
+    "group": "CSA",
+    "period_to": "12/31/2026",
+    "mkpp_budget_cap": 100000,
+    "activities_mixed_fee": [
+      { "outlet": "BANDUNG SELATAN", "act_code": "CONSUMER OFFER", "fee_expected": true, "fee_pct": 0.5, "amount": "60000" },
+      { "outlet": "JAKARTA SELATAN", "act_code": "ADVERTISING IN TV", "fee_expected": false, "fee_pct": 0.0, "amount": "40000" }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "mkpp": "26.10/MKPP-MIM/0061.000",
+  "claim_id": "",
+  "claim_doc": "",
+  "steps": [
+    {
+      "step": 1,
+      "title": "Buat kontrak dana (MKPP)",
+      "status": "Pass",
+      "detail": "DocNo=26.10/MKPP-MIM/0061.000",
+      "evidence": "01_mkpp_submitted.png",
+      "at": "19/10/2026 14:59:28"
+    },
+    {
+      "step": 2,
+      "title": "Atasan setujui kontrak",
+      "status": "Pass",
+      "detail": "26.10/MKPP-MIM/0061.000 disetujui Patrick",
+      "evidence": "02_patrick_saved.png",
+      "at": "19/10/2026 14:59:48"
+    },
+    {
+      "step": 3,
+      "title": "Subdist buat & simpan klaim",
+      "status": "Fail",
+      "detail": "Sebelum Save, Partner/Activity belum terlihat terisi: {'ok': True, 'partner_ui': '', 'activity_ui': '', 'partner_filled': False, 'activity_filled': False, 'hidden': {'TXT_PARTNER_NAME': '', 'TXT_ACTIVITY': '', 'INT_ACTIVITY_ID': '', 'INT_PARTNER_ID': ''}}",
+      "evidence": "03e_filled_before_save.png",
+      "at": "19/10/2026 15:01:44"
+    }
+  ]
+}

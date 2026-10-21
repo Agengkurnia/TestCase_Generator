@@ -1,0 +1,22 @@
+{
+  "pass": 9,
+  "fail": 0,
+  "total": 9,
+  "docs": [
+    {
+      "preset": "P-SMALL-10",
+      "doc": "26.10/MKPP-MIM/0055.000"
+    },
+    {
+      "preset": "P-OFFER-30",
+      "doc": "26.10/MKPP-MIM/0056.000"
+    },
+    {
+      "preset": "P-ADS-40",
+      "doc": "26.10/MKPP-MIM/0057.000"
+    }
+  ],
+  "cap": 100000,
+  "excel": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\SIT_Exhaustive\\DF_SIT_Expanded_Batch_2026_10_18_01-11-37.xlsx",
+  "evidence": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\SIT_Exhaustive\\evidence_expanded_2026_10_18_01-11-37"
+}

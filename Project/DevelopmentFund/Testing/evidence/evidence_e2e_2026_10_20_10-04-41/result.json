@@ -1,0 +1,16 @@
+{
+  "pass": 8,
+  "fail": 2,
+  "total": 10,
+  "state": {
+    "mkpp": "26.10/MKPP-MIM/0062.000",
+    "claims": []
+  },
+  "excel": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\reports\\DF_E2E_Corrected_2026_10_20_10-04-41.xlsx",
+  "evidence": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_e2e_2026_10_20_10-04-41",
+  "roles": {
+    "creator": "Muslih",
+    "mkpp_approver": "PATRICK.YOHANNES",
+    "abm": "fahmi.permadi"
+  }
+}

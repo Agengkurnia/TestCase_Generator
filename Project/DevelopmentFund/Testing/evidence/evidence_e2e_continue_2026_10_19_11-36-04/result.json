@@ -1,0 +1,25 @@
+{
+  "pass": 4,
+  "fail": 1,
+  "total": 5,
+  "state": {
+    "mkpp": "26.10/MKPP-MIM/0058.000",
+    "claims": [
+      {
+        "doc": "26.10/KLAIM-CSA/036",
+        "id": "5330",
+        "status": "",
+        "alert": "\u00d7\nKolom Activity harus di isi!",
+        "save": "\"{\\\"bitSuccess\\\":false,\\\"objData\\\":null,\\\"txtMessage\\\":\\\"Kolom Activity harus di isi!\\\",\\\"txtStackTrace\\\":\\\"   at KN2018_PromoOnline_BussLogic.clsKCAO_KDSBL.SaveData_API_V2(clsLogin dLogin, XXSHP_KDS_M_USER userDat, String data, String txtGUID) in c:\\\\\\\\jenkins\\\\\\\\win\\\\\\\\workspace\\\\\\\\newprm_ENV_DEVELOPMENT\\\\\\\\KN2018_PromoOnline_BussLogic\\\\\\\\Custom\\\\\\\\KCAO\\\\\\\\KCAO_KDS\\\\\\\\clsKCAO_KDSBL.vb:line 398\\\\",
+        "sub": "050311"
+      }
+    ]
+  },
+  "excel": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\reports\\DF_E2E_Corrected_2026_10_19_11-36-04.xlsx",
+  "evidence": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_e2e_continue_2026_10_19_11-36-04",
+  "roles": {
+    "creator": "Muslih",
+    "mkpp_approver": "PATRICK.YOHANNES",
+    "abm": "fahmi.permadi"
+  }
+}

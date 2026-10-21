@@ -1,0 +1,102 @@
+{
+  "id": "MOM-16-FEE",
+  "mkpp": {
+    "doc": "26.10/MKPP-MIM/0061.000",
+    "headers": [
+      "NO",
+      "SUPPLIER",
+      "ACTIVITY",
+      "NO SKP",
+      "PERIOD PROGRAM FROM",
+      "PERIOD PROGRAM TO",
+      "AMOUNT",
+      "FEE (%)",
+      "FEE AMOUNT",
+      "ATTACHMENT",
+      "DELETE"
+    ],
+    "rows": [
+      {
+        "supplier": "1",
+        "activity": "",
+        "raw": "1 %",
+        "cells": [
+          "1",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "%",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "supplier": "2",
+        "activity": "",
+        "raw": "2",
+        "cells": [
+          "2",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ]
+  },
+  "activity_lov": {
+    "headers": [
+      "Pilih",
+      "Activity",
+      "Program Desc",
+      "Period From",
+      "period To",
+      "Fee",
+      "Fee Percentage",
+      "Sisa Saldo"
+    ],
+    "info": "Showing 1 to 1 of 1 entries",
+    "n": 1,
+    "rows": [
+      {
+        "cells": [
+          "",
+          "CONSUMER OFFER (380201)",
+          "5-step MKPP 1019-1458",
+          "10/19/2026 12:00:00 AM",
+          "12/31/2026 12:00:00 AM",
+          "Yes",
+          "0.5%",
+          "300",
+          "",
+          "",
+          ""
+        ],
+        "text": "CONSUMER OFFER (380201) 5-step MKPP 1019-1458 10/19/2026 12:00:00 AM 12/31/2026 12:00:00 AM Yes 0.5% 300"
+      }
+    ]
+  },
+  "remaining_parse": [
+    {
+      "act": "CONSUMER OFFER (380201)",
+      "remaining": "300",
+      "feeFlag": "Yes",
+      "feePct": "0.5%"
+    }
+  ],
+  "interpretation": "1 MKPP boleh multi activity dengan fee masing-masing; activity yang fee-nya habis tidak muncul di LOV klaim",
+  "status": "Fail",
+  "hasil": "Retest 19/10: MKPP 26.10/MKPP-MIM/0061.000 punya 2 activity (multi-activity OK). LOV Activity klaim: 1 baris — contoh [{'act': 'CONSUMER OFFER (380201)', 'remaining': '300', 'feeFlag': 'Yes', 'feePct': '0.5%'}]. Kolom fee/remaining terlihat (Fee Yes + %). Filter 'fee habis → activity hilang' BELUM terbukti: tidak ada activity fee residual=0 di data uji saat ini (sisa contoh masih >0). Perlu seed klaim fee sampai residual 0 lalu cek LOV lagi.",
+  "at": "19/10/2026 17:15:51",
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom_fee2_2026_10_19_17-14-56"
+}

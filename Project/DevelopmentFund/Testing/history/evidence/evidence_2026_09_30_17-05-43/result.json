@@ -1,0 +1,66 @@
+{
+  "mkpp_doc_no": "",
+  "claims": [],
+  "test_cases": [
+    {
+      "id": "TC-E2E-01",
+      "modul": "KICAO KDS",
+      "fitur": "Navigasi Form MKPP DF",
+      "tipe": "Positive",
+      "desc": "Membuka halaman utama modul Memo MKPP Promosi DF",
+      "prasyarat": "User Muslih login dengan hak akses pembuatan MKPP",
+      "langkah": "1. Login KDS user Muslih\n2. Masuk ke menu Transaction -> Memo MKPP Promosi",
+      "expected": "Halaman formulir MKPP terbuka dan tombol aksi tersedia",
+      "priority": "Medium",
+      "status": "Pass",
+      "actual": "Halaman MKPP berhasil dimuat dengan sempurna",
+      "evidence_file": "evidence_2026_09_30_17-05-43/01_MKPP_Dashboard_Initial.png",
+      "evidence_name": "01_MKPP_Dashboard_Initial.png"
+    },
+    {
+      "id": "TC-E2E-02",
+      "modul": "KICAO KDS",
+      "fitur": "Modal LOV Group Subdistributor Datatable",
+      "tipe": "Positive",
+      "desc": "Membuka modal LOV Subdist Group dan memilih Group CSA dari datatable",
+      "prasyarat": "Tombol #btnLOVGroupName diklik",
+      "langkah": "1. Buka modal LOV Group Subdist\n2. Cari dan pilih Group CSA\n3. Klik Select",
+      "expected": "Group Subdist CSA terpilih dan terisi pada form",
+      "priority": "High",
+      "status": "Pass",
+      "actual": "Group CSA berhasil dipilih dari modal LOV",
+      "evidence_file": "evidence_2026_09_30_17-05-43/02_MKPP_LOV_Group_Datatable.png",
+      "evidence_name": "02_MKPP_LOV_Group_Datatable.png"
+    },
+    {
+      "id": "TC-E2E-03",
+      "modul": "KICAO KDS",
+      "fitur": "Modal LOV Subdistributor Datatable - BANDUNG SELATAN",
+      "tipe": "Positive",
+      "desc": "Membuka modal LOV Subdistributor berpaginasi dan memilih BANDUNG SELATAN",
+      "prasyarat": "Baris Activity 1 telah ditambahkan",
+      "langkah": "1. Klik tombol LOV Supplier/Subdist pada baris 1\n2. Filter pencarian BANDUNG SELATAN\n3. Klik Select pada hasil datatable",
+      "expected": "Subdistributor terpilih dan terisi pada baris activity",
+      "priority": "High",
+      "status": "Pass",
+      "actual": "Subdistributor BANDUNG SELATAN berhasil dipilih dari LOV",
+      "evidence_file": "evidence_2026_09_30_17-05-43/03_MKPP_LOV_Subdist_BDO_Datatable.png",
+      "evidence_name": "03_MKPP_LOV_Subdist_BDO_Datatable.png"
+    },
+    {
+      "id": "TC-E2E-ERR",
+      "modul": "E2E",
+      "fitur": "Alur terhenti",
+      "tipe": "Positive",
+      "desc": "Siklus MKPP sampai klaim selesai tanpa error",
+      "prasyarat": "Langkah sebelumnya berhasil",
+      "langkah": "Lanjutkan langkah berikutnya sampai status klaim APPROVED",
+      "expected": "Dokumen MKPP APPROVED dan kedua klaim APPROVED",
+      "priority": "High",
+      "status": "Fail",
+      "actual": "Frame.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"table tbody tr:first-child .btnSelect\")\n",
+      "evidence_file": "evidence_2026_09_30_17-05-43/Error_E2E.png",
+      "evidence_name": "Error_E2E.png"
+    }
+  ]
+}

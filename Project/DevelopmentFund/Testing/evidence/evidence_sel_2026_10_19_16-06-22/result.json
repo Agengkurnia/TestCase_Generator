@@ -1,0 +1,96 @@
+{
+  "stamp": "19/10/2026 16:08:06",
+  "pass": 3,
+  "fail": 8,
+  "results": [
+    {
+      "no": 5,
+      "id": "FN-MAP-13",
+      "status": "Pass",
+      "hasil": "Fee input editable; save alert='Parent Mapping Subdist berhasil diubah.' ui={'inputs': [{'id': 'editActivityBolFee', 'name': '', 'value': 'on', 'disabled': False, 'readOnly': False, 'visible': True}, {'id': 'editActivityFeePercentage', 'name': '', 'value': '0', 'disabled': False, 'readOnly': False, 'visible': True}], 'saveBtn': [{'text': 'Simpan', 'disabled': False, 'id': 'btnSave'}, {'text': 'Simpan', 'disabled': False, 'id': 'btnSaveActivityFee'}], 'bodySnippet': 'MAVEN\\nSHP SYSTEM\\nHome\\nMaster\\nDofs\\nDolphine\\nAudit (Ia)\\nAppsheet\\nNotification Api\\nDevelopment Fund\\nMapping Subdist\\nMemo Qp\\nMonitoring Subdist\\nSystem Config Df\\nMan Power Gt\\nAKS\\nMaster / Mapping Subdist / Edit\\n\\nUbah Group / Alamat / Activity / Child\\n\\nKembali\\nSimpan\\nIDENTITAS\\nKode KMMD (Bosnet) *\\nNama KMMD *\\nTipe KMMD\\nRegion\\nOutlet ID\\nOutlet Name\\nGROUP\\nTipe *\\n— Pilih —\\nGroup\\nNon Group\\nNama Group *\\nCABA', 'url': 'https://mavendev.kalbenutritionals.web.id/DF/MappingSubdist'}",
+      "evidence": "FN_MAP_13_after_save.png",
+      "at": "19/10/2026 16:06:56"
+    },
+    {
+      "no": 15,
+      "id": "FN-MK-13",
+      "status": "Fail",
+      "hasil": "Print control: {'byId': None, 'candidates': [{'id': 'btnPrintout', 'text': 'Print', 'cls': 'btn btn-info', 'display': 'none', 'visible': False}]}",
+      "evidence": "FN_MK_13_print.png",
+      "at": "19/10/2026 16:07:04"
+    },
+    {
+      "no": 16,
+      "id": "FN-MK-19",
+      "status": "Fail",
+      "hasil": "Update Attachment: {'btnUpdateAttachment': {'visible': False, 'display': 'none', 'disabled': None}, 'related': [{'id': 'btnUpdateAttachment', 'text': 'Update Attachment', 'visible': False, 'display': 'none'}]}",
+      "evidence": "FN_MK_19_attach.png",
+      "at": "19/10/2026 16:07:04"
+    },
+    {
+      "no": 23,
+      "id": "FN-AP-09",
+      "status": "Fail",
+      "hasil": "Add Row controls: {'matches': [], 'htmlHint': False}",
+      "evidence": "FN_AP_09_addrow.png",
+      "at": "19/10/2026 16:07:14"
+    },
+    {
+      "no": 24,
+      "id": "FN-PR-01",
+      "status": "Pass",
+      "hasil": "before={'btnNew': 'visible', 'id': '0'} after={'id': '0', 'reason': 'Reason', 'mkpp': '', 'formReady': True}",
+      "evidence": "FN_PR_01_new.png",
+      "at": "19/10/2026 16:07:29"
+    },
+    {
+      "no": 30,
+      "id": "FN-PR-15",
+      "status": "Fail",
+      "hasil": "btnSubmit={'state': 'hidden', 'text': 'Submit', 'html': '<a id=\"btnSubmit\" class=\"btn btn-success\" style=\"display: none;\"><i class=\"fa fa-send\"></i> Submit</a>'} alts=[{'id': 'btnSubmit', 'text': 'Submit', 'visible': False}]",
+      "evidence": "FN_PR_15_submit.png",
+      "at": "19/10/2026 16:07:29"
+    },
+    {
+      "no": 32,
+      "id": "FN-PR-21",
+      "status": "Pass",
+      "hasil": "Fee balance validation probe: {'hasFeeLabel': False, 'fns': ['p_setHasDFFee', 'p_getDFFeeConfigList', 'p_isDFFeeActivity', 'p_calculateDetailFee', 'p_calculatePayloadFee', 'p_normalizeDetailFee', 'p_validateFeeBalance', 'p_btnActivitiesFee_Click', 'p_parseMemosFeesResult', 'p_LoadFeeSummary', 'p_RenderFeeSummaryMessage', 'p_RenderFeeSummary', 'p_txtDetailFeeAmount_changed'], 'els': ['txtFeeDevfundAdm', 'lblDetailFee', 'lblDetailFee', 'spnFeeSummaryLoading', 'tabFeeMkpp', 'tbodyFeeSummary']}",
+      "evidence": "FN_PR_21_fee.png",
+      "at": "19/10/2026 16:07:29"
+    },
+    {
+      "no": 55,
+      "id": "MOM-16-05",
+      "status": "Fail",
+      "hasil": "Gagal buka tab Activity detail: {'tab': [], 'headers': ['ACTION', 'OUTLET ID', 'OUTLET NAME', 'KODE KMMD', 'NAMA KMMD', 'LINKED AT'], 'nRows': 4, 'rows': ['Lepas 3324911 PT.ADYAJATI LESTARI 010211 Adyajati Lestari, PT (MEDAN TIMUR) 2026-09-24', 'Lepas 4132931 PT. ADYAJATI LESTARI (RANTAU PRAPAT) 350218 Adyajati Lestari, PT (RANTAU PRAPAT) 2026-09-24', 'Lepas 4134895 PT.ADYAJATI LESTARI 010212 Adyajati Lestari, PT (TANJUNG MORAWA) 2026-09-24', 'Lepas 3159661 PT. ALAM ANUGERAH SARANA DAYA 390107 Alam Anugerah Sarana Daya, PT (MADIUN) 2026-09-24'], 'role': ''}",
+      "evidence": "MOM05_activity_tab.png",
+      "at": "19/10/2026 16:07:47"
+    },
+    {
+      "no": 61,
+      "id": "MOM-16-09",
+      "status": "Fail",
+      "hasil": "Page.evaluate: SyntaxError: Unexpected identifier 'not'\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:290:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nTraceback (most recent call last):\n  File \"D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\runners\\_retest_selected_pts.py\", line 532, in t61\n    headers = page.evaluate(\n        \"\"\"() => {\n    ...<6 lines>...\n        }\"\"\"\n    )\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\sync_api\\_generated.py\", line 8566, in evaluate\n    self._sync(\n    ~~~~~~~~~~^\n        self._impl_obj.evaluate(expression=expression, arg=mapping.to_impl(arg))\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_page.py\", line 464, in evaluate\n    return await self._main_frame.evaluate(expression, arg)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_frame.py\", line 320, in evaluate\n    await self._channel.send(\n    ...<6 lines>...\n    )\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"C:\\Users\\Lenovo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\playwright\\_impl\\_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.Error: Page.evaluate: SyntaxError: Unexpected identifier 'not'\n    at eval (<anonymous>)",
+      "evidence": "MOM09_FAIL.png",
+      "at": "19/10/2026 16:08:01"
+    },
+    {
+      "no": 65,
+      "id": "MOM-16-FEE",
+      "status": "Fail",
+      "hasil": "UI klaim siap (MKPP LOV/AddDetail). Multi-MKPP di LOV rows=10. E2E Klaim Fee 1-MKPP vs 2-MKPP belum dijalankan end-to-end (SOP draft / data fee khusus). info={'hasMkppLov': True, 'hasAddDetail': True, 'hasFeeCol': True, 'canMultiDetail': True, 'hintFeeClaim': False, 'mkppRowsVisible': 10, 'mkppInfo': 'Showing 1 to 10 of 78 entries'}",
+      "evidence": "MOM_FEE_mkpp_lov.png",
+      "at": "19/10/2026 16:08:04"
+    },
+    {
+      "no": 67,
+      "id": "MOM-16-ATT",
+      "status": "Fail",
+      "hasil": "Attachment modal: {'text': '×\\nDocument Attachment\\nNo attachment.', 'hasMemoCCD': False, 'hasKwitansi': False, 'hasRekapan': False, 'fileInput': True, 'checklistItems': []}. Upload generik ada; checklist wajib fee (Memo CCD / kwitansi / rekapan PA) tidak lengkap sebagai field terpisah.",
+      "evidence": "MOM_ATT_modal.png",
+      "at": "19/10/2026 16:08:06"
+    }
+  ],
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_sel_2026_10_19_16-06-22"
+}

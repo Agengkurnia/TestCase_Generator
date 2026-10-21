@@ -1,0 +1,136 @@
+{
+  "id": "MOM-16-07",
+  "status": "Pass",
+  "hasil": "BEFORE: search kosong, n=10, outstandingZero=0, sample=26.10/MKPP-MIM/0064.000 out=50,300.00 || 26.10/MKPP-MIM/0063.000 out=100,300.00 || 26.10/MKPP-MIM/0062.000 out=100,300.00. AFTER: search='0064', n=1, outstandingZero=0, sample=26.10/MKPP-MIM/0064.000 out=50,300.00. Evidence: MOM07_BEFORE_mkpp_lov.png + MOM07_AFTER_mkpp_lov.png.",
+  "before": {
+    "headers": [
+      "Detail",
+      "Pilih",
+      "No Dokumen",
+      "Ref Dokumen",
+      "Status",
+      "Program Description",
+      "Reserve Budget",
+      "Outstanding Budget",
+      "Activity"
+    ],
+    "search": "",
+    "info": "Showing 1 to 10 of 81 entries",
+    "n": 10,
+    "outstandingZero": 0,
+    "zeros": [],
+    "sample": "26.10/MKPP-MIM/0064.000 out=50,300.00 || 26.10/MKPP-MIM/0063.000 out=100,300.00 || 26.10/MKPP-MIM/0062.000 out=100,300.00",
+    "rows": [
+      {
+        "doc": "26.10/MKPP-MIM/0064.000",
+        "reserve": "50,000.00",
+        "outstanding": "50,300.00",
+        "outNum": 50300,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201), ADVERTISING IN TV (350104)"
+      },
+      {
+        "doc": "26.10/MKPP-MIM/0063.000",
+        "reserve": "0.00",
+        "outstanding": "100,300.00",
+        "outNum": 100300,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201), ADVERTISING IN TV (350104)"
+      },
+      {
+        "doc": "26.10/MKPP-MIM/0062.000",
+        "reserve": "0.00",
+        "outstanding": "100,300.00",
+        "outNum": 100300,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201), ADVERTISING IN TV (350104)"
+      },
+      {
+        "doc": "26.10/MKPP-MIM/0061.000",
+        "reserve": "60,000.00",
+        "outstanding": "40,300.00",
+        "outNum": 40300,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201), ADVERTISING IN TV (350104)"
+      },
+      {
+        "doc": "26.10/MKPP-MIM/0060.000",
+        "reserve": "0.00",
+        "outstanding": "100,300.00",
+        "outNum": 100300,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201), ADVERTISING IN TV (350104)"
+      },
+      {
+        "doc": "26.10/MKPP-MIM/0059.000",
+        "reserve": "0.00",
+        "outstanding": "100,300.00",
+        "outNum": 100300,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201), ADVERTISING IN TV (350104)"
+      },
+      {
+        "doc": "26.10/MKPP-MIM/0058.000",
+        "reserve": "0.00",
+        "outstanding": "100,300.00",
+        "outNum": 100300,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201), ADVERTISING IN TV (350104)"
+      },
+      {
+        "doc": "26.10/MKPP-MIM/0056.000",
+        "reserve": "0.00",
+        "outstanding": "30,150.00",
+        "outNum": 30150,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201)"
+      },
+      {
+        "doc": "26.10/MKPP-MIM/0055.000",
+        "reserve": "0.00",
+        "outstanding": "10,050.00",
+        "outNum": 10050,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201)"
+      },
+      {
+        "doc": "26.10/MKPP-MIM/0054.000",
+        "reserve": "50,250.00",
+        "outstanding": "50,050.00",
+        "outNum": 50050,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201), ADVERTISING IN TV (350104)"
+      }
+    ]
+  },
+  "after": {
+    "headers": [
+      "Detail",
+      "Pilih",
+      "No Dokumen",
+      "Ref Dokumen",
+      "Status",
+      "Program Description",
+      "Reserve Budget",
+      "Outstanding Budget",
+      "Activity"
+    ],
+    "search": "0064",
+    "info": "Showing 1 to 1 of 1 entries",
+    "n": 1,
+    "outstandingZero": 0,
+    "zeros": [],
+    "sample": "26.10/MKPP-MIM/0064.000 out=50,300.00",
+    "rows": [
+      {
+        "doc": "26.10/MKPP-MIM/0064.000",
+        "reserve": "50,000.00",
+        "outstanding": "50,300.00",
+        "outNum": 50300,
+        "status": "APPROVED",
+        "activity": "CONSUMER OFFER (380201), ADVERTISING IN TV (350104)"
+      }
+    ]
+  },
+  "out": "D:\\Work\\Source\\TestCase_Generator\\Project\\DevelopmentFund\\Testing\\evidence\\evidence_mom7_mkpp_2026_10_20_11-05-16"
+}
